@@ -10,26 +10,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--All Sports Tab-->
         <scene sceneID="yA4-Rh-v07">
             <objects>
-                <viewController id="jkA-Co-UaD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IJs-KT-OZr">
+                <viewController title="All Sports Tab" id="jkA-Co-UaD" sceneMemberID="viewController">
+                    <view key="view" contentMode="redraw" id="IJs-KT-OZr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yg6-UW-C5r"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4hi-D6-u4G"/>
+                    <tabBarItem key="tabBarItem" title="All Sports" image="first" id="4hi-D6-u4G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEz-qS-uVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="-646"/>
+            <point key="canvasLocation" x="750" y="1038"/>
         </scene>
-        <!--First-->
+        <!--Highlights Tab-->
+        <scene sceneID="UL6-za-bCK">
+            <objects>
+                <viewController title="Highlights Tab" id="LZB-7s-zWT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cF-M3-WjH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3jf-DA-UID"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Highlights" id="cjN-VW-A2S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lg0-BN-W8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1756"/>
+        </scene>
+        <!--Landing Tab-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Landing Tab" id="9pv-A4-QxB" customClass="FirstViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,16 +73,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Favorites Tab-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Favorites Tab" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +110,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,11 +129,12 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="jkA-Co-UaD" kind="relationship" relationship="viewControllers" id="AzP-79-3eb"/>
+                        <segue destination="LZB-7s-zWT" kind="relationship" relationship="viewControllers" id="Hij-lE-tha"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-225" y="378"/>
         </scene>
     </scenes>
     <resources>
