@@ -6,7 +6,6 @@ target 'hc-sports' do
   use_frameworks!
 
   # Pods for hc-sports
-  pod 'Firebase/Auth'
   pod 'Firebase/Database'
 
   target 'hc-sportsTests' do
