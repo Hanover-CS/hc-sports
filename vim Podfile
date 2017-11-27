@@ -1,0 +1,94 @@
+Last login: Tue Nov 21 13:24:56 on ttys000
+Stephanies-MacBook-Pro:~ stephanieiglesias9$ ls
+Applications		Music			master.py
+Desktop			Pictures		node_modules
+Documents		Public			test.py
+Downloads		cs220			typescript
+Library			hotger			workspace
+MacKeeper Backups	iosPract
+Movies			java
+Stephanies-MacBook-Pro:~ stephanieiglesias9$ cd Desktop/
+Stephanies-MacBook-Pro:Desktop stephanieiglesias9$ ls
+AdobeFlashPlayerInstaller.dmg	MySQLWorkbench
+Arduino.app			Operating Systems
+Chi Omega PR			Senior Seminar
+ChiO Christmas			Temperature Converter
+DePauw UMC			Winery
+Eclipse.app			Women in Science
+HCWS_PongBracket.py		hc-sports
+IDLE.app			~$r Fellowship Resume 2017.docx
+Stephanies-MacBook-Pro:Desktop stephanieiglesias9$ cd Temperature\ Converter/
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ ls
+Temperature Converter		Temperature Converter.xcodeproj
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ cd Temperature\ Converter
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ ls
+AppDelegate.swift	Base.lproj		ViewController.swift
+Assets.xcassets		Info.plist
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ cd..
+-bash: cd..: command not found
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ cd ..
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ ls
+Temperature Converter		Temperature Converter.xcodeproj
+Stephanies-MacBook-Pro:Temperature Converter stephanieiglesias9$ cd ..
+Stephanies-MacBook-Pro:Desktop stephanieiglesias9$ ls
+AdobeFlashPlayerInstaller.dmg	MySQLWorkbench
+Arduino.app			Operating Systems
+Chi Omega PR			Senior Seminar
+ChiO Christmas			Temperature Converter
+DePauw UMC			Winery
+Eclipse.app			Women in Science
+HCWS_PongBracket.py		hc-sports
+IDLE.app			~$r Fellowship Resume 2017.docx
+Stephanies-MacBook-Pro:Desktop stephanieiglesias9$ cd hc-sports/
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ ls
+IMG_1500.JPG		Proposal.pdf		hc-sportsTests
+IMG_1501.JPG		hc-sports		hc-sportsUITests
+IMG_1505.JPG		hc-sports.xcodeproj
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ cd hc-sports
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ ls
+AppDelegate.swift		FirstViewController.swift
+Assets.xcassets			Info.plist
+Base.lproj			SecondViewController.swift
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ pod init
+[!] No Xcode project found, please specify one
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ cd Info.plist 
+-bash: cd: Info.plist: Not a directory
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ ls
+AppDelegate.swift		FirstViewController.swift
+Assets.xcassets			Info.plist
+Base.lproj			SecondViewController.swift
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ cd ..
+lStephanies-MacBook-Pro:hc-sports stephanieiglesias9$ ls
+IMG_1500.JPG		Proposal.pdf		hc-sportsTests
+IMG_1501.JPG		hc-sports		hc-sportsUITests
+IMG_1505.JPG		hc-sports.xcodeproj
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ pod init
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ ls
+IMG_1500.JPG		Podfile			hc-sports.xcodeproj
+IMG_1501.JPG		Proposal.pdf		hc-sportsTests
+IMG_1505.JPG		hc-sports		hc-sportsUITests
+Stephanies-MacBook-Pro:hc-sports stephanieiglesias9$ vim Podfile 
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'hc-sports' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for hc-sports
+pod 'Firebase'
+pod 'Firebase/Database'
+  target 'hc-sportsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'hc-sportsUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+~                                                                               
+-- INSERT --
