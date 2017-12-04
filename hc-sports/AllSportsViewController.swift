@@ -16,6 +16,8 @@ struct cellData {
 }
 class AllSportsViewController: UITableViewController {
     
+    
+    
     var sports = ["Men's Basketball", "Men's Soccer", "Women's Basetball", "Women's Soccer"]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

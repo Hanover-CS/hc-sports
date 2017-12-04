@@ -13,7 +13,6 @@
 		BBD177F81705E58D785D9C2F /* Pods_hc_sportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */; };
 		BBE21CD21FCF08FF00FFA1EF /* AllSportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */; };
 		BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */; };
-		BBE21CD61FD0A4CA00FFA1EF /* AllSportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD51FD0A4CA00FFA1EF /* AllSportsTableViewController.swift */; };
 		BBE21CD81FD0B6DD00FFA1EF /* IMG_0735.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */; };
 		BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */; };
 		BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */; };
@@ -52,7 +51,6 @@
 		BBC290891FD489BF004109FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsViewController.swift; sourceTree = "<group>"; };
 		BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsViewController.swift; sourceTree = "<group>"; };
-		BBE21CD51FD0A4CA00FFA1EF /* AllSportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsTableViewController.swift; sourceTree = "<group>"; };
 		BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0735.PNG; sourceTree = "<group>"; };
 		BBEA2FA91FBE443E00583536 /* hc-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hc-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */,
 				BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
-				BBE21CD51FD0A4CA00FFA1EF /* AllSportsTableViewController.swift */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
 				BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */,
 				BBEA2FB71FBE443E00583536 /* LaunchScreen.storyboard */,
@@ -482,7 +479,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE21CD61FD0A4CA00FFA1EF /* AllSportsTableViewController.swift in Sources */,
 				BBEA2FB11FBE443E00583536 /* FavoritesViewController.swift in Sources */,
 				BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */,
 				BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */,
