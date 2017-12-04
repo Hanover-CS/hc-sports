@@ -13,31 +13,23 @@
         <scene sceneID="AvR-xR-VzR">
             <objects>
                 <tableViewController title="All Sports Tab" id="5P2-oL-lf9" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eI3-RG-DVz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="omh-dQ-5DM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K8b-xL-RIO">
-                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </tableView>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hMR-FK-Dnr">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hMR-FK-Dnr" id="nmG-sE-B5Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="7Ym-1d-loY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Sports" id="0FH-mz-kGh" colorLabel="IBBuiltInLabel-Blue"/>
+                            </items>
+                        </navigationBar>
                         <connections>
-                            <outlet property="dataSource" destination="5P2-oL-lf9" id="bKX-dF-LNM"/>
-                            <outlet property="delegate" destination="5P2-oL-lf9" id="pha-da-j2C"/>
+                            <outlet property="dataSource" destination="5P2-oL-lf9" id="z2h-43-4Ld"/>
+                            <outlet property="delegate" destination="5P2-oL-lf9" id="rL2-5O-gw9"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Pqc-Y8-Boc"/>
+                    <tabBarItem key="tabBarItem" id="Pqc-Y8-Boc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMs-AW-AGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,93 +39,79 @@
         <scene sceneID="fSW-Kv-Oqe">
             <objects>
                 <tableViewController title="Highlights Tab" id="MPb-El-QUh" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cfu-Vl-Hlr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G45-PJ-Ko9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CE0-hT-kQg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CE0-hT-kQg" id="w0Z-Og-XLn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="fwK-aI-68D">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Highlights" id="Klx-cj-kOs"/>
+                            </items>
+                        </navigationBar>
                         <connections>
-                            <outlet property="dataSource" destination="MPb-El-QUh" id="JgP-Tc-lnV"/>
-                            <outlet property="delegate" destination="MPb-El-QUh" id="L2X-5f-amu"/>
+                            <outlet property="dataSource" destination="MPb-El-QUh" id="Nrj-6c-7LI"/>
+                            <outlet property="delegate" destination="MPb-El-QUh" id="NQE-T6-sqf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="QxS-1X-LhL"/>
+                    <tabBarItem key="tabBarItem" id="QxS-1X-LhL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtt-hA-6DZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="1763"/>
+            <point key="canvasLocation" x="752.79999999999995" y="1762.6686656671666"/>
         </scene>
         <!--Landing Tab-->
         <scene sceneID="SGF-Z1-0Tk">
             <objects>
                 <tableViewController title="Landing Tab" id="ucI-PB-771" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B7i-WX-FJ2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u69-IM-QLu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="P3r-mc-Sa5">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P3r-mc-Sa5" id="QTk-wC-N2B">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
-                            <outlet property="dataSource" destination="ucI-PB-771" id="2rS-e6-dgK"/>
-                            <outlet property="delegate" destination="ucI-PB-771" id="xgr-zE-c1x"/>
+                            <outlet property="dataSource" destination="ucI-PB-771" id="QtQ-Fz-Vda"/>
+                            <outlet property="delegate" destination="ucI-PB-771" id="VnD-V5-Di4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="6i7-l6-JRx"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="XHc-oM-3dM"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lG3-57-VUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="-392"/>
+            <point key="canvasLocation" x="753" y="-341"/>
         </scene>
         <!--Favorites Tab-->
         <scene sceneID="iqy-zD-Kbl">
             <objects>
-                <tableViewController title="Favorites Tab" id="u3y-JH-3xB" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H3Q-Tw-Fu1">
+                <tableViewController title="Favorites Tab" id="u3y-JH-3xB" customClass="AllSportsViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="62h-zX-bgf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="n2c-LF-hUv">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n2c-LF-hUv" id="fdg-f7-0In">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="Zsj-CO-Chi">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Favorites" id="LfK-LG-TWr"/>
+                            </items>
+                        </navigationBar>
                         <connections>
-                            <outlet property="dataSource" destination="u3y-JH-3xB" id="6ot-EX-vJD"/>
-                            <outlet property="delegate" destination="u3y-JH-3xB" id="qml-AD-vRT"/>
+                            <outlet property="dataSource" destination="u3y-JH-3xB" id="YLE-UI-xe7"/>
+                            <outlet property="delegate" destination="u3y-JH-3xB" id="g2n-U0-Doc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ua0-vG-0eg"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="ua0-vG-0eg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faj-Ej-8dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="377"/>
         </scene>
-        <!--Favorites Tab-->
+        <!--Main Screen-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController title="Favorites Tab" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController title="Main Screen" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
