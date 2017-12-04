@@ -13,13 +13,11 @@
 		BBD177F81705E58D785D9C2F /* Pods_hc_sportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */; };
 		BBE21CD21FCF08FF00FFA1EF /* AllSportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */; };
 		BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */; };
-		BBE21CD81FD0B6DD00FFA1EF /* IMG_0735.PNG in Resources */ = {isa = PBXBuildFile; fileRef = BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */; };
 		BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */; };
 		BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */; };
 		BBEA2FB11FBE443E00583536 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FB01FBE443E00583536 /* FavoritesViewController.swift */; };
 		BBEA2FB41FBE443E00583536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEA2FB21FBE443E00583536 /* Main.storyboard */; };
 		BBEA2FB61FBE443E00583536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEA2FB51FBE443E00583536 /* Assets.xcassets */; };
-		BBEA2FB91FBE443E00583536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEA2FB71FBE443E00583536 /* LaunchScreen.storyboard */; };
 		BBEA2FC41FBE443E00583536 /* hc_sportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FC31FBE443E00583536 /* hc_sportsTests.swift */; };
 		BBEA2FCF1FBE443F00583536 /* hc_sportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA2FCE1FBE443F00583536 /* hc_sportsUITests.swift */; };
 /* End PBXBuildFile section */
@@ -51,14 +49,12 @@
 		BBC290891FD489BF004109FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsViewController.swift; sourceTree = "<group>"; };
 		BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsViewController.swift; sourceTree = "<group>"; };
-		BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0735.PNG; sourceTree = "<group>"; };
 		BBEA2FA91FBE443E00583536 /* hc-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hc-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		BBEA2FB01FBE443E00583536 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		BBEA2FB31FBE443E00583536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBEA2FB51FBE443E00583536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BBEA2FB81FBE443E00583536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBEA2FBA1FBE443E00583536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBEA2FBF1FBE443E00583536 /* hc-sportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hc-sportsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA2FC31FBE443E00583536 /* hc_sportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hc_sportsTests.swift; sourceTree = "<group>"; };
@@ -154,8 +150,6 @@
 				BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
-				BBE21CD71FD0B6D800FFA1EF /* IMG_0735.PNG */,
-				BBEA2FB71FBE443E00583536 /* LaunchScreen.storyboard */,
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
 				BBC290891FD489BF004109FC /* GoogleService-Info.plist */,
 			);
@@ -296,10 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBEA2FB91FBE443E00583536 /* LaunchScreen.storyboard in Resources */,
 				BBEA2FB61FBE443E00583536 /* Assets.xcassets in Resources */,
 				BBC2908A1FD489C0004109FC /* GoogleService-Info.plist in Resources */,
-				BBE21CD81FD0B6DD00FFA1EF /* IMG_0735.PNG in Resources */,
 				BBEA2FB41FBE443E00583536 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,14 +517,6 @@
 				BBEA2FB31FBE443E00583536 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BBEA2FB71FBE443E00583536 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBEA2FB81FBE443E00583536 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
