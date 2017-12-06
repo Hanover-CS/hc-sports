@@ -10,6 +10,8 @@
 		7936212A3B48BC781956972B /* Pods_hc_sportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */; };
 		92A556FCF85DC9BA2E9FC7E8 /* Pods_hc_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE826D12120C40043278F6FA /* Pods_hc_sports.framework */; };
 		BBC2908A1FD489C0004109FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC290891FD489BF004109FC /* GoogleService-Info.plist */; };
+		BBCDB5AC1FD7BF740079E821 /* SelectFavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */; };
+		BBCDB5AE1FD7CDED0079E821 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */; };
 		BBD177F81705E58D785D9C2F /* Pods_hc_sportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */; };
 		BBE21CD21FCF08FF00FFA1EF /* AllSportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */; };
 		BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */; };
@@ -47,6 +49,8 @@
 		79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955BF4B5216AC084DAC1FF6E /* Pods-hc-sportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sportsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sportsUITests/Pods-hc-sportsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBC290891FD489BF004109FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFavsViewController.swift; sourceTree = "<group>"; };
+		BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsViewController.swift; sourceTree = "<group>"; };
 		BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsViewController.swift; sourceTree = "<group>"; };
 		BBEA2FA91FBE443E00583536 /* hc-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hc-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +152,9 @@
 				BBEA2FB01FBE443E00583536 /* FavoritesViewController.swift */,
 				BBE21CD11FCF08FF00FFA1EF /* AllSportsViewController.swift */,
 				BBE21CD31FCF091F00FFA1EF /* HighlightsViewController.swift */,
+				BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
+				BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
 				BBC290891FD489BF004109FC /* GoogleService-Info.plist */,
@@ -472,7 +478,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBEA2FB11FBE443E00583536 /* FavoritesViewController.swift in Sources */,
+				BBCDB5AC1FD7BF740079E821 /* SelectFavsViewController.swift in Sources */,
 				BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */,
+				BBCDB5AE1FD7CDED0079E821 /* CustomCell.swift in Sources */,
 				BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */,
 				BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */,
 				BBE21CD21FCF08FF00FFA1EF /* AllSportsViewController.swift in Sources */,
