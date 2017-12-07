@@ -7,13 +7,16 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 
 class FavoritesViewController: UIViewController {
 
+//    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        ref = Database.database().reference()
     }
 
     override func didReceiveMemoryWarning() {

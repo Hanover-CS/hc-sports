@@ -88,7 +88,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EAU-qy-YZG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Highlights" id="AFi-0P-rb4"/>
+                    <tabBarItem key="tabBarItem" title="" image="twitter" selectedImage="twitter" id="AFi-0P-rb4">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YS-cO-Iyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,7 +197,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mZN-Yb-YJM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" id="KXI-Wd-BJx"/>
+                    <tabBarItem key="tabBarItem" title="" image="landing page" selectedImage="landing page" springLoaded="YES" id="KXI-Wd-BJx">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEY-6K-2fX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +238,9 @@
         <scene sceneID="S4c-pR-Oxl">
             <objects>
                 <navigationController title="Sports" automaticallyAdjustsScrollViewInsets="NO" id="3sw-si-DYB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="All Sports" id="SkK-o1-ysY"/>
+                    <tabBarItem key="tabBarItem" title="" image="all sports" selectedImage="all sports" id="SkK-o1-ysY">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5tC-au-sjy">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -248,11 +255,13 @@
             </objects>
             <point key="canvasLocation" x="1069.5999999999999" y="1037.6311844077961"/>
         </scene>
-        <!--Favorites-->
+        <!--Navigation Controller-->
         <scene sceneID="eN7-fq-YqC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bdj-rZ-tUz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="8pV-Lb-QPh"/>
+                    <tabBarItem key="tabBarItem" title="" image="favorites" selectedImage="favorites" id="8pV-Lb-QPh">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QM5-4K-Zph">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -287,4 +296,10 @@
             <point key="canvasLocation" x="-1382" y="1038"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="all sports" width="35" height="35"/>
+        <image name="favorites" width="35" height="35"/>
+        <image name="landing page" width="35" height="35"/>
+        <image name="twitter" width="35" height="35"/>
+    </resources>
 </document>
