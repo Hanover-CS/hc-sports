@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7936212A3B48BC781956972B /* Pods_hc_sportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */; };
 		92A556FCF85DC9BA2E9FC7E8 /* Pods_hc_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE826D12120C40043278F6FA /* Pods_hc_sports.framework */; };
+		BB16BF671FE8267100044DAF /* teamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16BF651FE8266800044DAF /* teamVC.swift */; };
+		BB8A68E81FE3386C006ADF6B /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */; };
 		BBC2908A1FD489C0004109FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC290891FD489BF004109FC /* GoogleService-Info.plist */; };
 		BBCDB5AC1FD7BF740079E821 /* SelectFavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */; };
 		BBCDB5AE1FD7CDED0079E821 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */; };
@@ -48,6 +50,8 @@
 		64E8AC37200093630F8AA4F4 /* Pods-hc-sportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sportsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sportsTests/Pods-hc-sportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955BF4B5216AC084DAC1FF6E /* Pods-hc-sportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sportsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sportsUITests/Pods-hc-sportsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB16BF651FE8266800044DAF /* teamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = teamVC.swift; sourceTree = "<group>"; };
+		BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		BBC290891FD489BF004109FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFavsViewController.swift; sourceTree = "<group>"; };
 		BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -155,9 +159,11 @@
 				BBCDB5AB1FD7BF740079E821 /* SelectFavsViewController.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
 				BBCDB5AD1FD7CDED0079E821 /* CustomCell.swift */,
+				BB16BF651FE8266800044DAF /* teamVC.swift */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
 				BBC290891FD489BF004109FC /* GoogleService-Info.plist */,
+				BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */,
 			);
 			path = "hc-sports";
 			sourceTree = "<group>";
@@ -478,8 +484,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBEA2FB11FBE443E00583536 /* FavoritesViewController.swift in Sources */,
+				BB8A68E81FE3386C006ADF6B /* MyTableViewCell.swift in Sources */,
 				BBCDB5AC1FD7BF740079E821 /* SelectFavsViewController.swift in Sources */,
 				BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */,
+				BB16BF671FE8267100044DAF /* teamVC.swift in Sources */,
 				BBCDB5AE1FD7CDED0079E821 /* CustomCell.swift in Sources */,
 				BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */,
 				BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */,

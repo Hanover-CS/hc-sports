@@ -8,37 +8,49 @@
 
 //import Foundation
 import UIKit
+import Firebase
 
+var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
+var myIndex = 0
 class AllSportsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+//    var ref:DatabaseReference!
+    
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    
-    var sports = ["Men's Basketball", "Men's Soccer", "Women's Basetball", "Women's Soccer"]
-    
+
+//    var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
+//    var myIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        ref = Database.database().reference()
         
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sports.count
+        return teams.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "SportsCell")
-        cell?.textLabel?.text = sports[indexPath.row]
         
-        return cell!
+        let cell: MyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "sportsCell", for: indexPath) as! MyTableViewCell
+        
+        cell.textLabel?.text = teams[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
+        
     }
 }
