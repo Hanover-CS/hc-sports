@@ -8,7 +8,7 @@
 
 //import Foundation
 import UIKit
-import Firebase
+//import Firebase
 
 var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
 var myIndex = 0
@@ -17,9 +17,6 @@ class AllSportsViewController: UIViewController, UITableViewDelegate, UITableVie
 //    var ref:DatabaseReference!
     
     @IBOutlet weak var tableView: UITableView!
-
-//    var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
-//    var myIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
