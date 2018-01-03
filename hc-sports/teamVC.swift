@@ -16,8 +16,9 @@ class teamVC: UIViewController {
         
         titleLabel.title = teams[myIndex]
     }
-    @IBOutlet weak var rosterButton: UIButton!
-    func rosterButton(sender: UIButton) {
+    
+    @IBAction func rosterButton(_ sender: UIButton) {
         performSegue(withIdentifier: "rosterSeg", sender: self)
     }
+    
 }

@@ -97,14 +97,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="rosterButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wos-HV-hVZ">
-                                <rect key="frame" x="29" y="191" width="316" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWh-Sz-3Bb">
+                                <rect key="frame" x="29" y="235" width="316" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier="rosterButton"/>
-                                <state key="normal" title="Team Roster">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
+                                <state key="normal" title="Team Roster"/>
+                                <connections>
+                                    <action selector="rosterButton:" destination="Qnz-9F-0g8" eventType="touchUpInside" id="TQC-AU-ZWH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,14 +114,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="U5f-CK-Ujp"/>
                     <connections>
-                        <outlet property="rosterButton" destination="wos-HV-hVZ" id="RVV-pt-tdk"/>
                         <outlet property="titleLabel" destination="U5f-CK-Ujp" id="Lqc-gX-d0B"/>
-                        <segue destination="1eq-Nl-A04" kind="show" identifier="rosterSeg" id="VWV-Yc-kJM"/>
+                        <segue destination="1eq-Nl-A04" kind="show" identifier="rosterSeg" id="bpn-Az-QAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R2-bE-1Ia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2796" y="1038"/>
+            <point key="canvasLocation" x="2796" y="1037.6311844077961"/>
         </scene>
         <!--Roster View Controller-->
         <scene sceneID="2wh-Zr-RqI">
