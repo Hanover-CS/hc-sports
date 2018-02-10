@@ -8,24 +8,35 @@
 
 //import Foundation
 import UIKit
-//import Firebase
+import Firebase
+import FirebaseDatabase
 
 var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
 var myIndex = 0
 class AllSportsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-//    var ref:DatabaseReference!
-    
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        ref = Database.database().reference()
-        
         tableView.delegate = self
         tableView.dataSource = self
     }
+//        func post() {
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//    }
+    
+//    func post() {
+//        let title = "Title"
+//        let message = "Message"
+//
+//        let post : [String : String] = ["title" : title,
+//                                        "message" : message]
+//
+//        let databaseRef = Database.database().reference()
+//
+//        databaseRef.child("Posts").childByAutoId().setValue(post)
+//    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
