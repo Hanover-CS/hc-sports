@@ -339,11 +339,49 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9BO-en-Eaq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Favorites" id="6KM-QN-mpO"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="6KM-QN-mpO">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="RtE-CE-hzZ">
+                            <connections>
+                                <segue destination="lVR-ki-ARB" kind="show" identifier="addToFavsSegue" id="BBH-0M-jh9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3V-2c-K1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1936.8" y="346.77661169415296"/>
+        </scene>
+        <!--Add To Favs Table View Controller-->
+        <scene sceneID="vL2-7K-j8v">
+            <objects>
+                <tableViewController id="lVR-ki-ARB" customClass="addToFavsTableViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tJ2-5e-WwL" customClass="addToFavsUITableViewCell" customModule="hc_sports">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favsCell" id="evK-v7-h5F">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="evK-v7-h5F" id="O7z-yV-MN3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lVR-ki-ARB" id="ENJ-hY-1R4"/>
+                            <outlet property="delegate" destination="lVR-ki-ARB" id="6R1-09-urs"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="addToFav" destination="tJ2-5e-WwL" id="wQY-53-ezq"/>
+                        <outlet property="addToFavs" destination="tJ2-5e-WwL" id="94x-70-XjT"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dND-6x-Hoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="347"/>
         </scene>
         <!--Sports-->
         <scene sceneID="S4c-pR-Oxl">
