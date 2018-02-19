@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YS-cO-Iyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736" y="1719"/>
+            <point key="canvasLocation" x="1070" y="1737"/>
         </scene>
         <!--Main Screen-->
         <scene sceneID="yl2-sM-qoP">
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEY-6K-2fX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-358"/>
+            <point key="canvasLocation" x="1070" y="-362"/>
         </scene>
         <!--FavoritesUI-->
         <scene sceneID="PHZ-XP-vlj">
@@ -342,44 +342,54 @@
                     <navigationItem key="navigationItem" title="Favorites" id="6KM-QN-mpO">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="RtE-CE-hzZ">
                             <connections>
-                                <segue destination="lVR-ki-ARB" kind="show" identifier="addToFavsSegue" id="BBH-0M-jh9"/>
+                                <action selector="addToFav:" destination="jPa-za-AAo" id="YOX-N0-Vnf"/>
+                                <segue destination="CMm-Ds-99G" kind="show" identifier="favsSegue" id="uzZ-FZ-ruo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3V-2c-K1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jPa-za-AAo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1936.8" y="346.77661169415296"/>
         </scene>
-        <!--Add To Favs Table View Controller-->
-        <scene sceneID="vL2-7K-j8v">
+        <!--Add To Favs View Controller-->
+        <scene sceneID="8vx-Y4-J43">
             <objects>
-                <tableViewController id="lVR-ki-ARB" customClass="addToFavsTableViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tJ2-5e-WwL" customClass="addToFavsUITableViewCell" customModule="hc_sports">
+                <viewController id="CMm-Ds-99G" customClass="addToFavsViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ks6-wh-Nab">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-fb-LcW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favsCell" id="OZy-1d-tPp">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OZy-1d-tPp" id="FBE-GT-Mvh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favsCell" id="evK-v7-h5F">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="evK-v7-h5F" id="O7z-yV-MN3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="lVR-ki-ARB" id="ENJ-hY-1R4"/>
-                            <outlet property="delegate" destination="lVR-ki-ARB" id="6R1-09-urs"/>
-                        </connections>
-                    </tableView>
+                        <constraints>
+                            <constraint firstItem="kRb-fb-LcW" firstAttribute="top" secondItem="7Wc-Os-TeQ" secondAttribute="top" id="3k7-5Y-PJC"/>
+                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="bottom" secondItem="kRb-fb-LcW" secondAttribute="bottom" id="J01-gJ-FpF"/>
+                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="trailing" secondItem="kRb-fb-LcW" secondAttribute="trailing" id="UV8-Ei-Vmy"/>
+                            <constraint firstItem="kRb-fb-LcW" firstAttribute="leading" secondItem="7Wc-Os-TeQ" secondAttribute="leading" id="w2b-d5-aL6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Wc-Os-TeQ"/>
+                    </view>
                     <connections>
-                        <outlet property="addToFav" destination="tJ2-5e-WwL" id="wQY-53-ezq"/>
-                        <outlet property="addToFavs" destination="tJ2-5e-WwL" id="94x-70-XjT"/>
+                        <outlet property="favsView" destination="kRb-fb-LcW" id="1Wg-Vr-rt2"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dND-6x-Hoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-1n-a10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2796" y="347"/>
         </scene>

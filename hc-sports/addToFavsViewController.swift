@@ -8,19 +8,17 @@
 
 import UIKit
 
+var currIndex = 0
+
 class addToFavsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
-    var myIndex = 0
+    var team = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
     
-    @IBOutlet var addToFavs: UITableView!
-    //    @IBOutlet weak var addToFavs: UITableView!
-    
-    
+    @IBOutlet weak var favsView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        addToFavs.delegate = self
-        addToFavs.dataSource = self
+//        favsView.delegate = self
+//        favsView.dataSource = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,24 +26,22 @@ class addToFavsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teams.count
+        return team.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: MyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "favsCell", for: indexPath) as! MyTableViewCell
+        let cell = favsView.dequeueReusableCell(withIdentifier: "favsCell", for: indexPath) as! MyTableViewCell
         
-        cell.textLabel?.text = teams[indexPath.row]
+        cell.textLabel?.text = team[indexPath.row]
         
         return cell
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        myIndex = indexPath.row
-        performSegue(withIdentifier: "addToFavsSegue", sender: self)
-        
-    }
-    */
-
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        currIndex = indexPath.row
+//        performSegue(withIdentifier: "favsSegue", sender: self)
+//
+//    }
 }

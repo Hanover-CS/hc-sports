@@ -21,11 +21,7 @@ class AllSportsViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
     }
-//        func post() {
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//    }
-    
+
 //    func post() {
 //        let title = "Title"
 //        let message = "Message"
