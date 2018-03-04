@@ -361,32 +361,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-fb-LcW">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3on-l7-x9Y">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favsCell" id="OZy-1d-tPp">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OZy-1d-tPp" id="FBE-GT-Mvh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-Ub-0UT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favsCell" id="ykT-YO-Q2Z">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ykT-YO-Q2Z" id="8ch-F8-4XU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kRb-fb-LcW" firstAttribute="top" secondItem="7Wc-Os-TeQ" secondAttribute="top" id="3k7-5Y-PJC"/>
-                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="bottom" secondItem="kRb-fb-LcW" secondAttribute="bottom" id="J01-gJ-FpF"/>
-                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="trailing" secondItem="kRb-fb-LcW" secondAttribute="trailing" id="UV8-Ei-Vmy"/>
-                            <constraint firstItem="kRb-fb-LcW" firstAttribute="leading" secondItem="7Wc-Os-TeQ" secondAttribute="leading" id="w2b-d5-aL6"/>
+                            <constraint firstItem="3on-l7-x9Y" firstAttribute="top" secondItem="7Wc-Os-TeQ" secondAttribute="top" id="9ZP-eY-W5y"/>
+                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="trailing" secondItem="3on-l7-x9Y" secondAttribute="trailing" id="AAh-iB-Buc"/>
+                            <constraint firstItem="3on-l7-x9Y" firstAttribute="leading" secondItem="7Wc-Os-TeQ" secondAttribute="leading" id="I87-iC-lPE"/>
+                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="bottom" secondItem="3on-l7-x9Y" secondAttribute="bottom" id="PTV-dt-NAu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Wc-Os-TeQ"/>
                     </view>
                     <connections>
-                        <outlet property="favsView" destination="kRb-fb-LcW" id="1Wg-Vr-rt2"/>
+                        <outlet property="tableview" destination="fL7-Ub-0UT" id="Q01-AO-zkA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-1n-a10" userLabel="First Responder" sceneMemberID="firstResponder"/>
