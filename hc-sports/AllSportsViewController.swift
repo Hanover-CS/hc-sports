@@ -9,30 +9,32 @@
 //import Foundation
 import UIKit
 import Firebase
-import FirebaseDatabase
 
 var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
 var myIndex = 0
 class AllSportsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var databaseRef: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        databaseRef = Database.database().reference()
     }
 
-    func post() {
-        let title = "Title"
-        let message = "Message"
-
-        let post : [String : String] = ["title" : title,
-                                        "message" : message]
-
-        let databaseRef = Database.database().reference()
-
-        databaseRef.child("Posts").childByAutoId().setValue(post)
-    }
+//    func post() {
+//        let title = "Title"
+//        let message = "Message"
+//
+//        let post : [String : String] = ["title" : title,
+//                                        "message" : message]
+//
+//        databaseRef.child("Posts").childByAutoId().setValue(post)
+//    }
     
     func postTeams() {
         let teamName = "Team Name"
@@ -40,10 +42,8 @@ class AllSportsViewController: UIViewController, UITableViewDelegate, UITableVie
         let conference = "Conference Record"
         
         let postTeams : [String : String] = ["teamName" : teamName,
-                                        "Overall Record" : overall,
-                                        "Conference Record" : conference]
-        
-        let databaseRef = Database.database().reference()
+                                        "overall" : overall,
+                                        "conference" : conference]
         
         databaseRef.child("Teams").childByAutoId().setValue(postTeams)
     }
