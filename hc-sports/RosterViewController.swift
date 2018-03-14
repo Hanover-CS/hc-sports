@@ -16,7 +16,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
     var mBasketballPos = ["Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Forward", "Forward", "Forward", "Forward", "Forward", "Forward", "Forward", "Center", "Center"]
     
     // Women's Soccer Team information
-    var wSoccer = ["Emma Debolt", "Charolette Verbanic", "Katie Perry", "Cassidy Evanson", "Kayla Nowlin", "Abi Childers", "Natalie Fausz", "Taylor Browning", "Sydney Mattingly", "Daria Volker", "Lizzie Matchette", "Maisyn Garland", "Kaitlyn Rhodes" ,"Brandi Brock", "Mad Underhill", "Abby Daley", "Mackenzie Sims", "Claire Stockwell", "Katie Workman", "Kiki Crone", "Mikaila Heavrin", "Leah Ellis", "Shannon Hawkins", "Abby Shroyer", "Abby Howes", "Sam Royer"]
+    var wSoccer = ["Emma Debolt", "Charolette Verbanic", "Katie Perry", "Cassidy Evanson", "Kayla Nowlin", "Abi Childers", "Natalie Fausz", "Taylor Browning", "Mac Mattingly", "Daria Volker", "Lizzie Matchette", "Maisyn Garland", "Kaitlyn Rhodes" ,"Brandi Brock", "Mad Underhill", "Abby Daley", "Mackenzie Sims", "Claire Stockwell", "Katie Workman", "Kiki Crone", "Mikaila Heavrin", "Leah Ellis", "Shannon Hawkins", "Abby Shroyer", "Abby Howes", "Sam Royer"]
     var wSoccerYr = ["Sophomore", "Freshman", "Freshman", "Junior", "Sophomore", "Freshman", "Freshman", "Senior", "Freshman", "Senior", "Sophomore", "Sophomore", "Freshman", "Sophomore", "Freshman", "Junior", "Freshman", "Junior", "Senior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Freshman"]
     var wSoccerNum = ["00", "0", "1", "2", "3", "4", "6", "7", "8", "10", "11", "14", "15", "16", "17", "19", "20", "21", "22", "23", "24", "25", "27", "32", "35", "40"]
     var wSoccerPos = ["GK", "GK", "GK", "Mid", "Forward", "Mid", "Forward", "Defense", "Forward", "Mid", "Defense", "Forward", "Mid", "Mid", "Defense", "Defense", "Mid", "Mid", "Defense", "Defense", "Defense", "Forward", "Mid", "Defense", "Mid", "GK"]
@@ -32,17 +32,30 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
 //        tableView.estimatedRowHeight = 44
 //         code above not worling/not resizing cell height
         
-        return mBasketball.count
+        return wSoccer.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RosterTableViewCell
         
-        cell.playerName.text = mBasketball[indexPath.row]
-        cell.playerPhoto.image = UIImage(named: mBasketball[indexPath.row])
-        cell.playerNumber.text = mBasketballNum[indexPath.row]
-        cell.playerYear.text = mBasketballYr[indexPath.row]
-        cell.playerPosition.text = mBasketballPos[indexPath.row]
+        if teams[myIndex] == "Women's Soccer"
+        {
+            cell.playerName.text = wSoccer[indexPath.row]
+            cell.playerPhoto.image = UIImage(named: wSoccer[indexPath.row])
+            cell.playerNumber.text = wSoccerNum[indexPath.row]
+            cell.playerYear.text = wSoccerYr[indexPath.row]
+            cell.playerPosition.text = wSoccerPos[indexPath.row]
+        }
+        else if teams[myIndex] == "Men's Basketball"
+        {
+            cell.playerName.text = mBasketball[indexPath.row]
+            cell.playerPhoto.image = UIImage(named: mBasketball[indexPath.row])
+            cell.playerNumber.text = mBasketballNum[indexPath.row]
+            cell.playerYear.text = mBasketballYr[indexPath.row]
+            cell.playerPosition.text = mBasketballPos[indexPath.row]
+        }
+        
+        
         
         return cell
     }
