@@ -21,6 +21,12 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
     var wSoccerNum = ["00", "0", "1", "2", "3", "4", "6", "7", "8", "10", "11", "14", "15", "16", "17", "19", "20", "21", "22", "23", "24", "25", "27", "32", "35", "40"]
     var wSoccerPos = ["GK", "GK", "GK", "Mid", "Forward", "Mid", "Forward", "Defense", "Forward", "Mid", "Defense", "Forward", "Mid", "Mid", "Defense", "Defense", "Mid", "Mid", "Defense", "Defense", "Defense", "Forward", "Mid", "Defense", "Mid", "GK"]
     
+    // Men's Soccer Team information
+    var mSoccer = ["Chris Brashear", "Will Bedel", "Thomas Doering", "Chris Pitre", "Evan Stacy", "Hunter Gurthrie", "Will Bridgeman", "Dominic Isadore", "Nicholas Ash", "Tanner Korfhagen", "Dean Mock", "Michael Dumaine", "Ian Waldrop", "Matt Marchiorlatti", "Ryan Keeney", "Dean Collier", "Renato Yostsui", "Myles Joseph", "Jason Karrel", "Zach Barnes", "Brad Simpson", "Bailey Allen", "Chris Roe", "Caleb Riddle", "Jaiden Scott", "Chuck Moore", "Logan Davis", "Michael Kerr", "Brady Gesenhues", "Alex Roberts", "Samuel Mantz", "Ethan Miller", "Henry Simon", "Aaron Stocksdale", "Cameron Rogers", "Harrison Zoellner"]
+    var mSoccerYr = ["Sophmore", "Freshman", "Senior", "Freshman", "Sophomore", "Junior", "Senior", "Senior", "Freshman", "Junior", "Junior", "Senior", "Freshman", "Junior", "Senior", "Senior", "Freshman", "Freshman", "Senior", "Senior", "Freshman", "Senior", "Sophomore", "Freshman", "Freshman", "Freshman", "Junior", "Freshman", "Sophomore", "Freshman", "Junior", "Freshman", "Freshman", "Freshman", "Junior", "Freshman"]
+    var mSoccerNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "19", "20", "21", "23", "24" ,"25", "26", "27", "28", "29", "31", "32", "33", "34", "35", "37", "40", "99"]
+    var mSoccerPos = ["GK", "GK", "Defense", "Mid", "Mid", "Mid", "Mid", "Forward", "Mid", "Forward", "Forward", "Defense", "Mid", "Mid", "Defense", "Defense", "Mid", "Defense", "Mid", "Defense", "Forward", "Mid", "Forward", "Mid", "Mid", "Defense", "Defense", "Defense", "Mid", "Defense", "Forward", "Defense", "Defense", "GK", "Mid", "GK"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,6 +59,14 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerNumber.text = mBasketballNum[indexPath.row]
             cell.playerYear.text = mBasketballYr[indexPath.row]
             cell.playerPosition.text = mBasketballPos[indexPath.row]
+        }
+        else if teams[myIndex] == "Men's Soccer"
+        {
+            cell.playerName.text = mSoccer[indexPath.row]
+            cell.playerPhoto.image = UIImage(named: mSoccer[indexPath.row])
+            cell.playerNumber.text = mSoccerNum[indexPath.row]
+            cell.playerYear.text = mSoccerYr[indexPath.row]
+            cell.playerPosition.text = mSoccerPos[indexPath.row]
         }
         
         
