@@ -45,18 +45,25 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
 //        tableView.estimatedRowHeight = 44
 //         code above not worling/not resizing cell height
         
-        if teams[myIndex] == "Women's Soccer"
-        {
-            return wSoccer.count
-        }
-        else if teams[myIndex] == "Men's Basketball"
+        if teams[myIndex] == "Men's Basketball"
         {
             return mBasketball.count
+        }
+        else if teams[myIndex] == "Women's Basketball"
+        {
+            return wBasketball.count
         }
         else if teams[myIndex] == "Men's Soccer"
         {
             return mSoccer.count
         }
+        else if teams[myIndex] == "Women's Soccer"
+        {
+            return wSoccer.count
+        }
+        
+        return mBasketball.count
+        
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -86,8 +93,6 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = mSoccerYr[indexPath.row]
             cell.playerPosition.text = mSoccerPos[indexPath.row]
         }
-        
-        
         
         return cell
     }
