@@ -9,13 +9,7 @@
 import UIKit
 
 class RosterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    // Men's Soccer Team information
-    var mSoccer = ["Chris Brashear", "Will Bedel", "Thomas Doering", "Chris Pitre", "Evan Stacy", "Hunter Gurthrie", "Will Bridgeman", "Dominic Isadore", "Nicholas Ash", "Tanner Korfhagen", "Dean Mock", "Michael Dumaine", "Ian Waldrop", "Matt Marchiorlatti", "Ryan Keeney", "Dean Collier", "Renato Yostsui", "Myles Joseph", "Jason Karrel", "Zach Barnes", "Brad Simpson", "Bailey Allen", "Chris Roe", "Caleb Riddle", "Jaiden Scott", "Chuck Moore", "Logan Davis", "Michael Kerr", "Brady Gesenhues", "Alex Roberts", "Samuel Mantz", "Ethan Miller", "Henry Simon", "Aaron Stocksdale", "Cameron Rogers", "Harrison Zoellner"]
-    var mSoccerYr = ["Sophmore", "Freshman", "Senior", "Freshman", "Sophomore", "Junior", "Senior", "Senior", "Freshman", "Junior", "Junior", "Senior", "Freshman", "Junior", "Senior", "Senior", "Freshman", "Freshman", "Senior", "Senior", "Freshman", "Senior", "Sophomore", "Freshman", "Freshman", "Freshman", "Junior", "Freshman", "Sophomore", "Freshman", "Junior", "Freshman", "Freshman", "Freshman", "Junior", "Freshman"]
-    var mSoccerNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "19", "20", "21", "23", "24" ,"25", "26", "27", "28", "29", "31", "32", "33", "34", "35", "37", "40", "99"]
-    var mSoccerPos = ["GK", "GK", "Defense", "Mid", "Mid", "Mid", "Mid", "Forward", "Mid", "Forward", "Forward", "Defense", "Mid", "Mid", "Defense", "Defense", "Mid", "Defense", "Mid", "Defense", "Forward", "Mid", "Forward", "Mid", "Mid", "Defense", "Defense", "Defense", "Mid", "Defense", "Forward", "Defense", "Defense", "GK", "Mid", "GK"]
-    
+   
     // Women's Soccer Team information
     var wSoccer = ["Emma Debolt", "Charolette Verbanic", "Katie Perry", "Cassidy Evanson", "Kayla Nowlin", "Abi Childers", "Natalie Fausz", "Taylor Browning", "Mac Mattingly", "Daria Volker", "Lizzie Matchette", "Maisyn Garland", "Kaitlyn Rhodes" ,"Brandi Brock", "Mad Underhill", "Abby Daley", "Mackenzie Sims", "Claire Stockwell", "Katie Workman", "Kiki Crone", "Mikaila Heavrin", "Leah Ellis", "Shannon Hawkins", "Abby Shroyer", "Abby Howes", "Sam Royer"]
     var wSoccerYr = ["Sophomore", "Freshman", "Freshman", "Junior", "Sophomore", "Freshman", "Freshman", "Senior", "Freshman", "Senior", "Sophomore", "Sophomore", "Freshman", "Sophomore", "Freshman", "Junior", "Freshman", "Junior", "Senior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Freshman"]
