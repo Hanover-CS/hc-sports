@@ -9,13 +9,7 @@
 import UIKit
 
 class RosterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    // Men's Basketball Team information
-    var mBasketball = ["Cam Fails", "Isaac Hibbard", "Logan Ratts", "Colin Smith", "Levi Buck", "John Williams", "Jacob Bray", "Blake Robertson", "Jordan Armstrong", "Ryan Cloncs", "Christian Reed", "Jackson Crawford", "Wes McKinney", "Kevin Williams", "Nick White", "Connor Washburn", "Parker Buse"]
-    var mBasketballYr = ["Junior", "Freshman", "Sophomore", "Senior", "Senior", "Sophomore", "Sophomore", "Sophomore", "Freshman", "Sophomore", "Sophomore", "Sophomore", "Senior", "Sophmore", "Junior", "Freshman", "Senior"]
-    var mBasketballNum = ["3", "5", "11", "12", "14", "15", "20", "21", "22", "25", "32", "33", "35", "40", "42", "45", "52"]
-    var mBasketballPos = ["Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Guard", "Forward", "Forward", "Forward", "Forward", "Forward", "Forward", "Forward", "Center", "Center"]
-    
-    // Women's Basketball Team information
+        // Women's Basketball Team information
     var wBasketball = ["Kristin Mills", "Claire Cromer", "Macy Walker", "Katie Hartman", "Avery Chezem", "Morgan Bivins", "Baylee Mitchell", "Amanda Butler", "Alexis Nall", "Brooke Todd", "Maleha Motter", "Elizabeth Lee", "Monty Rowley", "Allison Nash", "Julia Miller", "Savannah Courtney", "Haley Huddleston", "Holly Kallmeyer"]
     var wBasketballYr = ["Sophomore", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Senior", "Senior", "Freshman", "Sophomore", "Sophomore"]
     var wBasketballNum = ["1", "2","3", "4", "10", "11", "14", "15", "20", "21", "23", "25", "30", "32", "34", "35", "42"]

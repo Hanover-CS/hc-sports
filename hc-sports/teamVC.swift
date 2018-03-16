@@ -19,8 +19,8 @@ class teamVC: UIViewController {
         titleLabel.title = teams[myIndex]
 
         if teams[myIndex] == "Men's Basketball" {
-            overallRecord.text = "22-7"
-            conferenceRecord.text = "14-4"
+            overallRecord.text = mBasketballOverallRecord
+            conferenceRecord.text = mBasketballConferenceRecord
         }
         else if teams[myIndex] == "Women's Basketball" {
             overallRecord.text = "18-9"
