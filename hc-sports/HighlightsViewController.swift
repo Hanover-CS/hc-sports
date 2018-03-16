@@ -11,25 +11,32 @@ import UIKit
 import TwitterKit
 import FirebaseDatabase
 
-class HighlightsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class HighlightsViewController: UIViewController {
+//    UITableViewDelegate, UITableViewDataSource
     let databaseRef = Database.database().reference()
     var tweets = [AnyObject]()
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+    static let cellId = "cellId"
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return tweets.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
     
     @IBOutlet weak var twitterFeed: UITableViewCell!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        collectionView?.registerClass(StatusCell.self, forCellWithReuseIdentifier:
+//            ViewController.cellId)
 //        let client = TWTRAPIClient()
-//        var dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "HanoverPanthers", apiClient: client)
+////        var dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "HanoverPanthers", apiClient: client)
+//        let dataSource = TWTRUserTimelineDataSource(screenName: "HanoverPathers", apiClient: TWTRAPIClient())
+//        dataSource.includeReplies = true
+        
 //        self.databaseRef.child("HanoverPanthers").observe(.childAdded) { (snapshot: FIRDataSnapShot) in
 //            self.tweets.append(snapshot)
 //            self.twitterFeed.insert
