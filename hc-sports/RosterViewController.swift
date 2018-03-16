@@ -9,14 +9,7 @@
 import UIKit
 
 class RosterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   
-    // Women's Soccer Team information
-    var wSoccer = ["Emma Debolt", "Charolette Verbanic", "Katie Perry", "Cassidy Evanson", "Kayla Nowlin", "Abi Childers", "Natalie Fausz", "Taylor Browning", "Mac Mattingly", "Daria Volker", "Lizzie Matchette", "Maisyn Garland", "Kaitlyn Rhodes" ,"Brandi Brock", "Mad Underhill", "Abby Daley", "Mackenzie Sims", "Claire Stockwell", "Katie Workman", "Kiki Crone", "Mikaila Heavrin", "Leah Ellis", "Shannon Hawkins", "Abby Shroyer", "Abby Howes", "Sam Royer"]
-    var wSoccerYr = ["Sophomore", "Freshman", "Freshman", "Junior", "Sophomore", "Freshman", "Freshman", "Senior", "Freshman", "Senior", "Sophomore", "Sophomore", "Freshman", "Sophomore", "Freshman", "Junior", "Freshman", "Junior", "Senior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Freshman"]
-    var wSoccerNum = ["00", "0", "1", "2", "3", "4", "6", "7", "8", "10", "11", "14", "15", "16", "17", "19", "20", "21", "22", "23", "24", "25", "27", "32", "35", "40"]
-    var wSoccerPos = ["GK", "GK", "GK", "Mid", "Forward", "Mid", "Forward", "Defense", "Forward", "Mid", "Defense", "Forward", "Mid", "Mid", "Defense", "Defense", "Mid", "Mid", "Defense", "Defense", "Defense", "Forward", "Mid", "Defense", "Mid", "GK"]
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

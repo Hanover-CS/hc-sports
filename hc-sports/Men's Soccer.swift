@@ -9,12 +9,12 @@
 import Foundation
 
 /**     Men's Soccer file contains characteristics about the men's soccer team stored in the string literals:
- - mSoccer: list of women's basketball team players
- - mSoccerYr: list of the players' academic year
- - mSoccerNum: list of the players' number
- - mSoccerPos: list of the players' position
- - mSoccerOverallRecord: team's overall record
- - mSoccerConferenceRecord: team's conference record
+        - mSoccer: list of men's soccer team players
+        - mSoccerYr: list of the players' academic year
+        - mSoccerNum: list of the players' number
+        - mSoccerPos: list of the players' position
+        - mSoccerOverallRecord: team's overall record
+        - mSoccerConferenceRecord: team's conference record
  */
 
 var mSoccer = ["Chris Brashear", "Will Bedel", "Thomas Doering", "Chris Pitre", "Evan Stacy", "Hunter Gurthrie", "Will Bridgeman", "Dominic Isadore", "Nicholas Ash", "Tanner Korfhagen", "Dean Mock", "Michael Dumaine", "Ian Waldrop", "Matt Marchiorlatti", "Ryan Keeney", "Dean Collier", "Renato Yostsui", "Myles Joseph", "Jason Karrel", "Zach Barnes", "Brad Simpson", "Bailey Allen", "Chris Roe", "Caleb Riddle", "Jaiden Scott", "Chuck Moore", "Logan Davis", "Michael Kerr", "Brady Gesenhues", "Alex Roberts", "Samuel Mantz", "Ethan Miller", "Henry Simon", "Aaron Stocksdale", "Cameron Rogers", "Harrison Zoellner"]
