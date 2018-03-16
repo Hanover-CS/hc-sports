@@ -11,8 +11,8 @@ import Foundation
 /**     Men's Basketball file contains characteristics about the men's basketball team stored in the string literals:
         - mBasketball: list of men's basketball team players
         - mBasketballYr: list of the players' academic year
-        - mBasketballNum: list of the players's number
-        - mBasketballPos: list of the player's position
+        - mBasketballNum: list of the players' number
+        - mBasketballPos: list of the players' position
         - mBasketballOverallRecord: team's overall record
         - mBasketballConferenceRecord: team's conference record
 */

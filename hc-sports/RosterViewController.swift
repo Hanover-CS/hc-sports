@@ -9,11 +9,6 @@
 import UIKit
 
 class RosterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-        // Women's Basketball Team information
-    var wBasketball = ["Kristin Mills", "Claire Cromer", "Macy Walker", "Katie Hartman", "Avery Chezem", "Morgan Bivins", "Baylee Mitchell", "Amanda Butler", "Alexis Nall", "Brooke Todd", "Maleha Motter", "Elizabeth Lee", "Monty Rowley", "Allison Nash", "Julia Miller", "Savannah Courtney", "Haley Huddleston", "Holly Kallmeyer"]
-    var wBasketballYr = ["Sophomore", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Senior", "Senior", "Freshman", "Sophomore", "Sophomore"]
-    var wBasketballNum = ["1", "2","3", "4", "10", "11", "14", "15", "20", "21", "23", "25", "30", "32", "34", "35", "42"]
-    var wBasketballPos = ["Guard", "Guard", "Guard", "Guard", "Guard", "Forward", "Guard", "Guard", "Forward", "Guard", "Forward", "Guard", "Forward", "Guard", "Center", "Forward", "Guard", "Guard"]
     
     // Men's Soccer Team information
     var mSoccer = ["Chris Brashear", "Will Bedel", "Thomas Doering", "Chris Pitre", "Evan Stacy", "Hunter Gurthrie", "Will Bridgeman", "Dominic Isadore", "Nicholas Ash", "Tanner Korfhagen", "Dean Mock", "Michael Dumaine", "Ian Waldrop", "Matt Marchiorlatti", "Ryan Keeney", "Dean Collier", "Renato Yostsui", "Myles Joseph", "Jason Karrel", "Zach Barnes", "Brad Simpson", "Bailey Allen", "Chris Roe", "Caleb Riddle", "Jaiden Scott", "Chuck Moore", "Logan Davis", "Michael Kerr", "Brady Gesenhues", "Alex Roberts", "Samuel Mantz", "Ethan Miller", "Henry Simon", "Aaron Stocksdale", "Cameron Rogers", "Harrison Zoellner"]

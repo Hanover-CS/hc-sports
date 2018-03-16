@@ -23,8 +23,8 @@ class teamVC: UIViewController {
             conferenceRecord.text = mBasketballConferenceRecord
         }
         else if teams[myIndex] == "Women's Basketball" {
-            overallRecord.text = "18-9"
-            conferenceRecord.text = "13-5"
+            overallRecord.text = wBasketballOverallRecord
+            conferenceRecord.text = wBasketballConferenceRecord
         }
         else if teams[myIndex] == "Men's Soccer" {
             overallRecord.text = "13-4-2"
