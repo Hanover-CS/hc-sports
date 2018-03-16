@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         ref = Database.database().reference()
+        
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"Et5EGLfDftgJsQWzZMobIkFDb", consumerSecret:"7XZYrcZpKJYuubsOdlqHc9lBxlSUTYEEYbYuPbRcwBeStGBdlJ")
         
         return true
     }

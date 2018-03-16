@@ -13,8 +13,8 @@ class RosterTableViewCell: UITableViewCell {
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var playerPhoto: UIImageView!
     @IBOutlet weak var playerNumber: UILabel!
-    @IBOutlet weak var playerPosition: UILabel!
     @IBOutlet weak var playerYear: UILabel!
+    @IBOutlet weak var playerPosition: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

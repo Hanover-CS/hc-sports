@@ -9,6 +9,7 @@ target 'hc-sports' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'TwitterKit'
+#  pod 'STTwitter'
 
   target 'hc-sportsTests' do
     inherit! :search_paths
