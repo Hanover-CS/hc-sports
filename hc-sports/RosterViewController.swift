@@ -61,6 +61,14 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = mBasketballYr[indexPath.row]
             cell.playerPosition.text = mBasketballPos[indexPath.row]
         }
+        else if teams[myIndex] == "Women's Basketball"
+        {
+            cell.playerName.text = wBasketball[indexPath.row]
+            cell.playerPhoto.image = UIImage(named: wBasketball[indexPath.row])
+            cell.playerNumber.text = wBasketballNum[indexPath.row]
+            cell.playerYear.text = wBasketballYr[indexPath.row]
+            cell.playerPosition.text = wBasketballPos[indexPath.row]
+        }
         else if teams[myIndex] == "Men's Soccer"
         {
             cell.playerName.text = mSoccer[indexPath.row]

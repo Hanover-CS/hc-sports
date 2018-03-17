@@ -19,11 +19,11 @@ import Foundation
 
 var wBasketball = ["Kristin Mills", "Claire Cromer", "Macy Walker", "Katie Hartman", "Avery Chezem", "Morgan Bivins", "Baylee Mitchell", "Amanda Butler", "Alexis Nall", "Brooke Todd", "Maleha Motter", "Elizabeth Lee", "Monty Rowley", "Allison Nash", "Julia Miller", "Savannah Courtney", "Haley Huddleston", "Holly Kallmeyer"]
 
-var wBasketballYr = ["Sophomore", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Senior", "Senior", "Freshman", "Sophomore", "Sophomore"]
+var wBasketballYr = ["Sophomore", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Senior", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Sophomore", "Senior", "Senior","Freshman", "Sophomore", "Sophomore"]
 
-var wBasketballNum = ["1", "2","3", "4", "10", "11", "14", "15", "20", "21", "23", "25", "30", "32", "34", "35", "42"]
+var wBasketballNum = ["1", "2","3", "4", "10", "11", "14", "15", "20", "21", "23", "24", "25", "30", "32", "34", "35", "42"]
 
-var wBasketballPos = ["Guard", "Guard", "Guard", "Guard", "Guard", "Forward", "Guard", "Guard", "Forward", "Guard", "Forward", "Guard", "Forward", "Guard", "Center", "Forward", "Guard", "Guard"]
+var wBasketballPos = ["Guard", "Guard", "Guard", "Guard", "Guard", "Forward", "Guard", "Guard", "Forward", "Guard", "Forward", "Guard", "Forward", "Guard", "Center", "Forward", "Forward", "Guard", "Guard"]
 
 var wBasketballOverallRecord = "18-9"
 
