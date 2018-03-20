@@ -8,8 +8,8 @@
 
 import UIKit
 
-var teamsImages = ["men's basketball", "men's soccer", "women's basketball", "women's soccer"]
-var teams = ["Men's Basketball", "Men's Soccer", "Women's Basketball", "Women's Soccer"]
+var teamsImages = ["men's basketball", "women's basketball", "men's soccer", "women's soccer"]
+var teams = ["Men's Basketball", "Women's Basketball", "Men's Soccer", "Women's Soccer"]
 var curr = 0
 
 class SportsCollectionViewController: UICollectionViewController {
