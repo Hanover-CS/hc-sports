@@ -1,20 +1,18 @@
 //
-//  SportsCollectionViewController.swift
+//  addToFavsCollectionViewController.swift
 //  hc-sports
 //
-//  Created by Stephanie Iglesias on 3/19/18.
+//  Created by Stephanie Iglesias on 3/20/18.
 //  Copyright © 2018 Stephanie Iglesias. All rights reserved.
 //
 
 import UIKit
 
-var teamsImages = ["men's basketball", "women's basketball", "men's soccer", "women's soccer"]
-var teams = ["Men's Basketball", "Women's Basketball", "Men's Soccer", "Women's Soccer"]
-var curr = 0
+private let reuseIdentifier = "Cell"
+var favTeams: [String] = []
+var notFavTeams: [String] = []
+class addToFavsCollectionViewController: UICollectionViewController {
 
-class SportsCollectionViewController: UICollectionViewController {
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +20,9 @@ class SportsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellImage")
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        navigationItem.title = "Add to Favorites"
 
         // Do any additional setup after loading the view.
     }
@@ -46,30 +46,23 @@ class SportsCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return teamsImages.count
+        return 0
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCell
-
-        let cell: CustomCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellImage", for: indexPath) as! CustomCell
-
-        cell.imageView.image = UIImage(named: teamsImages[indexPath.row])
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+    
+        // Configure the cell
     
         return cell
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        curr = indexPath.row
-        performSegue(withIdentifier: "segue", sender: self)
-    }
-    
+
     // MARK: UICollectionViewDelegate
 
     /*
@@ -80,7 +73,7 @@ class SportsCollectionViewController: UICollectionViewController {
     */
 
     /*
-     Uncomment this method to specify if the specified item should be selected
+    // Uncomment this method to specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
