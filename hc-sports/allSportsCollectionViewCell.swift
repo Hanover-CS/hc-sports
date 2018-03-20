@@ -8,15 +8,11 @@
 
 import UIKit
 
-class CustomCell: UICollectionViewCell {
-    
+class allSportsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    
 }
