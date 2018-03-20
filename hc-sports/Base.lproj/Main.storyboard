@@ -276,11 +276,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7YU-2M-d7f">
-                            <size key="itemSize" width="150" height="150"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" sectionInsetReference="layoutMargins" id="7YU-2M-d7f">
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="45" minY="0.0" maxX="45" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <scrollView key="backgroundView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hg1-Zo-NC5">
                             <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
@@ -288,10 +288,10 @@
                         </scrollView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellImage" id="Ice-xW-x4B" customClass="allSportsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <rect key="frame" x="53" y="8" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hvv-Sc-JNh">
@@ -301,11 +301,11 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="Hvv-Sc-JNh" firstAttribute="top" secondItem="Ice-xW-x4B" secondAttribute="top" id="1Di-Gt-SCI"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hvv-Sc-JNh" secondAttribute="bottom" constant="10" id="Axs-bD-9bl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hvv-Sc-JNh" secondAttribute="bottom" id="Axs-bD-9bl"/>
                                     <constraint firstItem="Hvv-Sc-JNh" firstAttribute="leading" secondItem="Ice-xW-x4B" secondAttribute="leading" id="YZG-9W-LU6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hvv-Sc-JNh" secondAttribute="trailing" constant="10" id="oRi-3Q-Hjz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hvv-Sc-JNh" secondAttribute="trailing" id="oRi-3Q-Hjz"/>
                                 </constraints>
-                                <size key="customSize" width="100" height="100"/>
+                                <size key="customSize" width="90" height="90"/>
                                 <connections>
                                     <outlet property="imageView" destination="Hvv-Sc-JNh" id="be2-Bl-NGc"/>
                                 </connections>
@@ -442,27 +442,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="con-Wb-sMl">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" sectionInsetReference="layoutMargins" id="con-Wb-sMl">
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="45" minY="0.0" maxX="45" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addCell" id="YmX-kd-C0M" customClass="addToFavsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="53" y="8" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMr-01-tKi">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hMr-01-tKi">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="hMr-01-tKi" firstAttribute="top" secondItem="YmX-kd-C0M" secondAttribute="top" id="SoC-Ou-O3m"/>
+                                    <constraint firstItem="hMr-01-tKi" firstAttribute="leading" secondItem="YmX-kd-C0M" secondAttribute="leading" id="aID-8j-szb"/>
+                                    <constraint firstAttribute="trailing" secondItem="hMr-01-tKi" secondAttribute="trailing" id="cpU-2I-Mk0"/>
+                                    <constraint firstAttribute="bottom" secondItem="hMr-01-tKi" secondAttribute="bottom" id="ijb-EO-sEC"/>
+                                </constraints>
                                 <size key="customSize" width="90" height="90"/>
+                                <connections>
+                                    <outlet property="imageView" destination="hMr-01-tKi" id="2Rd-jM-lcq"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
