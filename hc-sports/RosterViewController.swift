@@ -21,19 +21,19 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
 //        tableView.estimatedRowHeight = 44
 //         code above not worling/not resizing cell height
         
-        if teams[myIndex] == "Men's Basketball"
+        if teams[curr] == "Men's Basketball"
         {
             return mBasketball.count
         }
-        else if teams[myIndex] == "Women's Basketball"
+        else if teams[curr] == "Women's Basketball"
         {
             return wBasketball.count
         }
-        else if teams[myIndex] == "Men's Soccer"
+        else if teams[curr] == "Men's Soccer"
         {
             return mSoccer.count
         }
-        else if teams[myIndex] == "Women's Soccer"
+        else if teams[curr] == "Women's Soccer"
         {
             return wSoccer.count
         }
@@ -45,7 +45,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RosterTableViewCell
         
-        if teams[myIndex] == "Women's Soccer"
+        if teams[curr] == "Women's Soccer"
         {
             cell.playerName.text = wSoccer[indexPath.row]
             cell.playerPhoto.image = UIImage(named: wSoccer[indexPath.row])
@@ -53,7 +53,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = wSoccerYr[indexPath.row]
             cell.playerPosition.text = wSoccerPos[indexPath.row]
         }
-        else if teams[myIndex] == "Men's Basketball"
+        else if teams[curr] == "Men's Basketball"
         {
             cell.playerName.text = mBasketball[indexPath.row]
             cell.playerPhoto.image = UIImage(named: mBasketball[indexPath.row])
@@ -61,7 +61,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = mBasketballYr[indexPath.row]
             cell.playerPosition.text = mBasketballPos[indexPath.row]
         }
-        else if teams[myIndex] == "Women's Basketball"
+        else if teams[curr] == "Women's Basketball"
         {
             cell.playerName.text = wBasketball[indexPath.row]
             cell.playerPhoto.image = UIImage(named: wBasketball[indexPath.row])
@@ -69,7 +69,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = wBasketballYr[indexPath.row]
             cell.playerPosition.text = wBasketballPos[indexPath.row]
         }
-        else if teams[myIndex] == "Men's Soccer"
+        else if teams[curr] == "Men's Soccer"
         {
             cell.playerName.text = mSoccer[indexPath.row]
             cell.playerPhoto.image = UIImage(named: mSoccer[indexPath.row])

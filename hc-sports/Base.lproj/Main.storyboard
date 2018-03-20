@@ -11,58 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AllSportsUI-->
-        <scene sceneID="isf-gR-2OJ">
-            <objects>
-                <viewController title="AllSportsUI" id="idW-9F-5o6" customClass="AllSportsViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rp7-pA-CTw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kgo-OO-XLK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-Vp-xd9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sportsCell" id="Fqv-MN-dm3" customClass="MyTableViewCell" customModule="hc_sports" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fqv-MN-dm3" id="F4t-MF-LER">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <sections/>
-                                    </tableView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="uqd-Vp-xd9" firstAttribute="top" secondItem="kgo-OO-XLK" secondAttribute="top" id="Rk1-ds-66t"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kgo-OO-XLK" secondAttribute="trailing" id="EQJ-8c-Pqb"/>
-                            <constraint firstItem="kgo-OO-XLK" firstAttribute="bottom" secondItem="cKA-ce-RXI" secondAttribute="bottom" id="MUE-ZY-5b0"/>
-                            <constraint firstItem="kgo-OO-XLK" firstAttribute="top" secondItem="cKA-ce-RXI" secondAttribute="top" id="l2s-Yh-vbD"/>
-                            <constraint firstItem="kgo-OO-XLK" firstAttribute="leading" secondItem="Rp7-pA-CTw" secondAttribute="leading" id="mMw-mZ-Jga"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cKA-ce-RXI"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sports" largeTitleDisplayMode="never" id="gXu-Nm-i8l"/>
-                    <connections>
-                        <outlet property="tableView" destination="uqd-Vp-xd9" id="gvE-tS-x7T"/>
-                        <segue destination="Qnz-9F-0g8" kind="show" identifier="segue" id="g4v-YX-sHC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jsX-H9-hre" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1936.8" y="1037.6311844077961"/>
-        </scene>
         <!--Title-->
         <scene sceneID="l8b-Jt-Hph">
             <objects>
@@ -316,7 +264,7 @@
             </objects>
             <point key="canvasLocation" x="1937" y="1945"/>
         </scene>
-        <!--Item-->
+        <!--Sports Collection View Controller-->
         <scene sceneID="hsj-rB-kXo">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNm-wD-jeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,14 +305,14 @@
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="thf-Iu-fOO"/>
                     <navigationItem key="navigationItem" id="8qD-R6-rZF"/>
                     <connections>
                         <outlet property="collectionView" destination="tsB-QJ-DV6" id="fZz-X8-YGM"/>
+                        <segue destination="Qnz-9F-0g8" kind="show" identifier="segue" id="4az-ri-Mpj"/>
                     </connections>
                 </collectionViewController>
             </objects>
-            <point key="canvasLocation" x="3608.8000000000002" y="2032.5337331334335"/>
+            <point key="canvasLocation" x="1937" y="1038"/>
         </scene>
         <!--Main Screen-->
         <scene sceneID="yl2-sM-qoP">
@@ -380,7 +328,6 @@
                         <segue destination="Bdj-rZ-tUz" kind="relationship" relationship="viewControllers" id="2TT-2c-WM2"/>
                         <segue destination="3sw-si-DYB" kind="relationship" relationship="viewControllers" id="6vN-4D-qwd"/>
                         <segue destination="frT-KE-zfj" kind="relationship" relationship="viewControllers" id="ejM-SH-i3J"/>
-                        <segue destination="kFR-h6-okD" kind="relationship" relationship="viewControllers" id="eC4-vz-t49"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -513,7 +460,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="idW-9F-5o6" kind="relationship" relationship="rootViewController" id="oli-zv-WwG"/>
+                        <segue destination="kFR-h6-okD" kind="relationship" relationship="rootViewController" id="XNU-HI-UK8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vD0-0b-hvy" userLabel="First Responder" sceneMemberID="firstResponder"/>

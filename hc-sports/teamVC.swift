@@ -16,21 +16,21 @@ class teamVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.title = teams[myIndex]
+        titleLabel.title = teams[curr]
 
-        if teams[myIndex] == "Men's Basketball" {
+        if teams[curr] == "Men's Basketball" {
             overallRecord.text = mBasketballOverallRecord
             conferenceRecord.text = mBasketballConferenceRecord
         }
-        else if teams[myIndex] == "Women's Basketball" {
+        else if teams[curr] == "Women's Basketball" {
             overallRecord.text = wBasketballOverallRecord
             conferenceRecord.text = wBasketballConferenceRecord
         }
-        else if teams[myIndex] == "Men's Soccer" {
+        else if teams[curr] == "Men's Soccer" {
             overallRecord.text = mSoccerOverallRecord
             conferenceRecord.text = mSoccerConferenceRecord
         }
-        else if teams[myIndex] == "Women's Soccer" {
+        else if teams[curr] == "Women's Soccer" {
             overallRecord.text = wSoccerOverallRecord
             conferenceRecord.text = wSoccerConferenceRecord
         }

@@ -9,6 +9,7 @@
 import UIKit
 
 var teamsImages = ["men's basketball", "men's soccer", "women's basketball", "women's soccer"]
+var curr = 0
 
 class SportsCollectionViewController: UICollectionViewController {
 
@@ -62,7 +63,12 @@ class SportsCollectionViewController: UICollectionViewController {
     
         return cell
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        curr = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
+    }
+    
     // MARK: UICollectionViewDelegate
 
     /*
@@ -73,7 +79,7 @@ class SportsCollectionViewController: UICollectionViewController {
     */
 
     /*
-    // Uncomment this method to specify if the specified item should be selected
+     Uncomment this method to specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
