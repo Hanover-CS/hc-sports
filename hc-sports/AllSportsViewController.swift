@@ -25,28 +25,6 @@ class AllSportsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         databaseRef = Database.database().reference()
     }
-
-//    func post() {
-//        let title = "Title"
-//        let message = "Message"
-//
-//        let post : [String : String] = ["title" : title,
-//                                        "message" : message]
-//
-//        databaseRef.child("Posts").childByAutoId().setValue(post)
-//    }
-    
-    func postTeams() {
-        let teamName = "Team Name"
-        let overall = "Overall Record"
-        let conference = "Conference Record"
-        
-        let postTeams : [String : String] = ["teamName" : teamName,
-                                        "overall" : overall,
-                                        "conference" : conference]
-        
-        databaseRef.child("Teams").childByAutoId().setValue(postTeams)
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

@@ -37,7 +37,7 @@ class SelectFavsViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
-        cell.sportsImage.image = UIImage(named: sportsimages[indexPath.row])
+//        cell.sportsImage.image = UIImage(named: sportsimages[indexPath.row])
         
         return cell
     }

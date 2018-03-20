@@ -10,6 +10,13 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
-    @IBOutlet weak var sportsImage: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
     
 }
