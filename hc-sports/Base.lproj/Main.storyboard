@@ -268,11 +268,10 @@
             </objects>
             <point key="canvasLocation" x="1937" y="1945"/>
         </scene>
-        <!--Sports Collection View Controller-->
+        <!--All Sports Collection View Controller-->
         <scene sceneID="hsj-rB-kXo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNm-wD-jeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <collectionViewController id="kFR-h6-okD" customClass="SportsCollectionViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="kFR-h6-okD" customClass="allSportsCollectionViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tsB-QJ-DV6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,7 +287,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </scrollView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellImage" id="Ice-xW-x4B" customClass="CustomCell" customModule="hc_sports" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellImage" id="Ice-xW-x4B" customClass="allSportsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -319,6 +318,7 @@
                         <segue destination="Qnz-9F-0g8" kind="show" identifier="segue" id="4az-ri-Mpj"/>
                     </connections>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNm-wD-jeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1937" y="1038"/>
         </scene>
@@ -373,84 +373,105 @@
             </objects>
             <point key="canvasLocation" x="1070" y="-362"/>
         </scene>
-        <!--FavoritesUI-->
-        <scene sceneID="PHZ-XP-vlj">
+        <!--Favs Collection View Controller-->
+        <scene sceneID="Idm-wH-v6r">
             <objects>
-                <viewController title="FavoritesUI" id="Wg5-FA-dBD" customClass="FavoritesViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zkN-TJ-GsZ">
+                <collectionViewController id="Xcj-Wh-97M" customClass="FavsCollectionViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MnG-3b-hgs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ut9-5g-v19">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9BO-en-Eaq" firstAttribute="trailing" secondItem="ut9-5g-v19" secondAttribute="trailing" id="79q-Dw-53G"/>
-                            <constraint firstItem="9BO-en-Eaq" firstAttribute="bottom" secondItem="ut9-5g-v19" secondAttribute="bottom" id="RPe-Du-Rs0"/>
-                            <constraint firstItem="ut9-5g-v19" firstAttribute="top" secondItem="9BO-en-Eaq" secondAttribute="top" id="pnP-Jj-BE7"/>
-                            <constraint firstItem="ut9-5g-v19" firstAttribute="leading" secondItem="9BO-en-Eaq" secondAttribute="leading" id="yXF-is-EzM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9BO-en-Eaq"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Favorites" id="6KM-QN-mpO">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="RtE-CE-hzZ">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="has-fe-9xI">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wX9-gW-wIa">
+                            <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favsCell" id="Ogy-zK-Tt3" customClass="FavsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-wT-Rtl">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <size key="customSize" width="90" height="90"/>
+                                <connections>
+                                    <outlet property="imageView" destination="Jmz-wT-Rtl" id="jKZ-kz-DjB"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Xcj-Wh-97M" id="ohQ-vk-xNf"/>
+                            <outlet property="delegate" destination="Xcj-Wh-97M" id="Vc2-CD-nHo"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="NZA-Gr-vzt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ffD-Rx-wq6">
                             <connections>
-                                <action selector="addToFav:" destination="jPa-za-AAo" id="YOX-N0-Vnf"/>
-                                <segue destination="CMm-Ds-99G" kind="show" identifier="favsSegue" id="uzZ-FZ-ruo"/>
+                                <segue destination="cs4-ip-QgU" kind="show" id="zsa-58-okt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N3V-2c-K1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="jPa-za-AAo" userLabel="Exit" sceneMemberID="exit"/>
+                    <connections>
+                        <outlet property="addMessage" destination="wX9-gW-wIa" id="eg9-Zt-JWq"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eg9-I7-F5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.8" y="346.77661169415296"/>
+            <point key="canvasLocation" x="1937" y="347"/>
         </scene>
-        <!--Add To Favs View Controller-->
-        <scene sceneID="8vx-Y4-J43">
+        <!--Add To Favs Collection View Controller-->
+        <scene sceneID="KTM-KX-uA8">
             <objects>
-                <viewController id="CMm-Ds-99G" customClass="addToFavsViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ks6-wh-Nab">
+                <collectionViewController id="cs4-ip-QgU" customClass="addToFavsCollectionViewController" customModule="hc_sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="DqF-SB-rhb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3on-l7-x9Y">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-Ub-0UT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favsCell" id="ykT-YO-Q2Z">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ykT-YO-Q2Z" id="8ch-F8-4XU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="3on-l7-x9Y" firstAttribute="top" secondItem="7Wc-Os-TeQ" secondAttribute="top" id="9ZP-eY-W5y"/>
-                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="trailing" secondItem="3on-l7-x9Y" secondAttribute="trailing" id="AAh-iB-Buc"/>
-                            <constraint firstItem="3on-l7-x9Y" firstAttribute="leading" secondItem="7Wc-Os-TeQ" secondAttribute="leading" id="I87-iC-lPE"/>
-                            <constraint firstItem="7Wc-Os-TeQ" firstAttribute="bottom" secondItem="3on-l7-x9Y" secondAttribute="bottom" id="PTV-dt-NAu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Wc-Os-TeQ"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableview" destination="fL7-Ub-0UT" id="Q01-AO-zkA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-1n-a10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="con-Wb-sMl">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addCell" id="YmX-kd-C0M" customClass="addToFavsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMr-01-tKi">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <size key="customSize" width="90" height="90"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="cs4-ip-QgU" id="FWE-OL-4Xh"/>
+                            <outlet property="delegate" destination="cs4-ip-QgU" id="0x3-UM-a3Y"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hh6-oj-j7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2796" y="347"/>
         </scene>
@@ -489,7 +510,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Wg5-FA-dBD" kind="relationship" relationship="rootViewController" id="4jM-OF-5Zk"/>
+                        <segue destination="Xcj-Wh-97M" kind="relationship" relationship="rootViewController" id="EtU-La-ypZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZd-mr-EMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
