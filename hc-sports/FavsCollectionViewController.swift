@@ -10,6 +10,7 @@ import UIKit
 
 class FavsCollectionViewController: UICollectionViewController {
     var curr = 0
+    var favTeamsDest: [String] = []
     @IBOutlet weak var addMessage: UILabel!
     
     override func viewDidLoad() {
@@ -19,12 +20,15 @@ class FavsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         navigationItem.title = "Favorites"
-        if (favTeams.count > 0) {
-            addMessage.isHidden = true
-        }
+        
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if favTeams.count > 0 {
+            super.collectionView?.reloadData()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -56,13 +60,20 @@ class FavsCollectionViewController: UICollectionViewController {
         let cell: FavsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "favsCell", for: indexPath) as! FavsCollectionViewCell
         
         cell.imageView.image = UIImage(named: favTeams[indexPath.row])
-        
+        if (favTeams.count > 0) {
+            addMessage.isHidden = true
+        }
+        print("favTeam len:", favTeams)
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         curr = indexPath.row
-        performSegue(withIdentifier: "segue", sender: self)
+        performSegue(withIdentifier: "teamSegue", sender: self)
     }
+    
+//    func updateArr(favTeams: [String]) {
+//
+//    }
 
 }

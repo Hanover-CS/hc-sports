@@ -9,5 +9,6 @@
 import UIKit
 
 class addToFavsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
     
 }

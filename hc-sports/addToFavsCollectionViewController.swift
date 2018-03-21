@@ -8,61 +8,78 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-var favTeams: [String] = []
-var notFavTeams: [String] = []
+var notFavTeams = ["men's basketball", "women's basketball", "men's soccer", "women's soccer"]
+//protocol myProtocol {
+//    func updateArr(favTeams: [String])
+//}
 class addToFavsCollectionViewController: UICollectionViewController {
 
+//    var myProtocol: myProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         navigationItem.title = "Add to Favorites"
 
         // Do any additional setup after loading the view.
     }
+    
 
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
+    
+     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "addSegue") {
+            
+//            let dVC = (segue.destination as! FavsCollectionViewController)
+            let navVC = segue.destination as! UINavigationController
+            let tableVC = navVC.viewControllers.first as! FavsCollectionViewController
+            
+            tableVC.favTeamsDest = favTeams
+//            tablefavTeamsDest = favTeams
+            collectionView?.reloadData()
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return notFavTeams.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
+        let cell: addToFavsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "addCell", for: indexPath) as! addToFavsCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: notFavTeams[indexPath.row])
     
         return cell
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        favTeams.append(notFavTeams[indexPath.row])
+        notFavTeams.remove(at: indexPath.row)
+        collectionView.reloadData()
+        print("favTeams:", favTeams)
+        
+        
+    }
     // MARK: UICollectionViewDelegate
 
     /*

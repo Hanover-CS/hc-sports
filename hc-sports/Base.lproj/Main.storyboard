@@ -381,11 +381,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="has-fe-9xI">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="has-fe-9xI">
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="45" minY="0.0" maxX="45" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add to Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wX9-gW-wIa">
                             <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
@@ -396,21 +396,27 @@
                         </label>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favsCell" id="Ogy-zK-Tt3" customClass="FavsCollectionViewCell" customModule="hc_sports" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="45" y="0.0" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-wT-Rtl">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-wT-Rtl">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="Jmz-wT-Rtl" firstAttribute="leading" secondItem="Ogy-zK-Tt3" secondAttribute="leading" id="5lN-hP-zaA"/>
+                                    <constraint firstItem="Jmz-wT-Rtl" firstAttribute="top" secondItem="Ogy-zK-Tt3" secondAttribute="top" id="aoc-9B-wJU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jmz-wT-Rtl" secondAttribute="bottom" id="eF8-gN-CDw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jmz-wT-Rtl" secondAttribute="trailing" id="i8Z-o1-kCO"/>
+                                </constraints>
                                 <size key="customSize" width="90" height="90"/>
                                 <connections>
                                     <outlet property="imageView" destination="Jmz-wT-Rtl" id="jKZ-kz-DjB"/>
+                                    <segue destination="Qnz-9F-0g8" kind="show" identifier="teamSegue" id="dkc-oK-2bx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -422,7 +428,7 @@
                     <navigationItem key="navigationItem" id="NZA-Gr-vzt">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ffD-Rx-wq6">
                             <connections>
-                                <segue destination="cs4-ip-QgU" kind="show" id="zsa-58-okt"/>
+                                <segue destination="cs4-ip-QgU" kind="show" identifier="addSeg" id="sce-30-SxO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -478,6 +484,9 @@
                             <outlet property="delegate" destination="cs4-ip-QgU" id="0x3-UM-a3Y"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="PC0-2U-TnR" userLabel="Back"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hh6-oj-j7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -554,4 +563,7 @@
         <image name="landing page" width="35" height="35"/>
         <image name="twitter" width="35" height="35"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dkc-oK-2bx"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7810F7882061ADA10095E624 /* addToFavsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810F7872061ADA10095E624 /* addToFavsCollectionViewController.swift */; };
 		7810F78A2061ADD10095E624 /* addToFavsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810F7892061ADD10095E624 /* addToFavsCollectionViewCell.swift */; };
+		78398FA120622BCD00BFBD1E /* variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78398FA020622BCD00BFBD1E /* variables.swift */; };
 		787B13AC205C2BD200F96A4B /* Men's Basketball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13AB205C2BD200F96A4B /* Men's Basketball.swift */; };
 		787B13AE205C30FF00F96A4B /* Women's Basketball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13AD205C30FF00F96A4B /* Women's Basketball.swift */; };
 		787B13B0205C320D00F96A4B /* Men's Soccer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13AF205C320D00F96A4B /* Men's Soccer.swift */; };
@@ -58,6 +59,7 @@
 		64E8AC37200093630F8AA4F4 /* Pods-hc-sportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sportsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sportsTests/Pods-hc-sportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7810F7872061ADA10095E624 /* addToFavsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToFavsCollectionViewController.swift; sourceTree = "<group>"; };
 		7810F7892061ADD10095E624 /* addToFavsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToFavsCollectionViewCell.swift; sourceTree = "<group>"; };
+		78398FA020622BCD00BFBD1E /* variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variables.swift; sourceTree = "<group>"; };
 		787B13AB205C2BD200F96A4B /* Men's Basketball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Men's Basketball.swift"; sourceTree = "<group>"; };
 		787B13AD205C30FF00F96A4B /* Women's Basketball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Women's Basketball.swift"; sourceTree = "<group>"; };
 		787B13AF205C320D00F96A4B /* Men's Soccer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Men's Soccer.swift"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
 				BBC290891FD489BF004109FC /* GoogleService-Info.plist */,
 				BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */,
+				78398FA020622BCD00BFBD1E /* variables.swift */,
 				787B13AB205C2BD200F96A4B /* Men's Basketball.swift */,
 				787B13AF205C320D00F96A4B /* Men's Soccer.swift */,
 				787B13AD205C30FF00F96A4B /* Women's Basketball.swift */,
@@ -529,6 +532,7 @@
 				BBE21CD41FCF091F00FFA1EF /* HighlightsViewController.swift in Sources */,
 				787B13BE2061A53400F96A4B /* FavsCollectionViewController.swift in Sources */,
 				787B13BC20602CC200F96A4B /* allSportsCollectionViewController.swift in Sources */,
+				78398FA120622BCD00BFBD1E /* variables.swift in Sources */,
 				787B13C02061AB9600F96A4B /* FavsCollectionViewCell.swift in Sources */,
 				7810F7882061ADA10095E624 /* addToFavsCollectionViewController.swift in Sources */,
 				BB3126231FF44FE100A999BD /* RosterTableViewCell.swift in Sources */,
