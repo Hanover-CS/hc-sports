@@ -16,11 +16,7 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 44
-//         code above not worling/not resizing cell height
-        
+    {        
         if teams[curr] == "Men's Basketball"
         {
             return mBasketball.count

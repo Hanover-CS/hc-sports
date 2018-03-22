@@ -34,6 +34,7 @@ class teamVC: UIViewController {
             overallRecord.text = wSoccerOverallRecord
             conferenceRecord.text = wSoccerConferenceRecord
         }
+
     }
     
     @IBAction func rosterButton(_ sender: UIButton) {

@@ -9,5 +9,4 @@
 import Foundation
 
 var favTeams: [String] = []
-//var favTeamsDest: [String] = []
-
+var curr: Int = Int()

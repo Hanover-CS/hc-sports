@@ -8,7 +8,7 @@
 
 import UIKit
 
-var notFavTeams = ["men's basketball", "women's basketball", "men's soccer", "women's soccer"]
+var notFavTeams = ["Men's Basketball", "Women's Basketball", "Men's Soccer", "Women's Soccer"]
 //protocol myProtocol {
 //    func updateArr(favTeams: [String])
 //}
@@ -77,9 +77,10 @@ class addToFavsCollectionViewController: UICollectionViewController {
         notFavTeams.remove(at: indexPath.row)
         collectionView.reloadData()
         print("favTeams:", favTeams)
-        
-        
     }
+    
+    
+}
     // MARK: UICollectionViewDelegate
 
     /*
@@ -111,4 +112,5 @@ class addToFavsCollectionViewController: UICollectionViewController {
     }
     */
 
-}
+//}
+

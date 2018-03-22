@@ -9,7 +9,7 @@
 import UIKit
 
 class FavsCollectionViewController: UICollectionViewController {
-    var curr = 0
+//    var teamSelected: Int = Int()
     var favTeamsDest: [String] = []
     @IBOutlet weak var addMessage: UILabel!
     
@@ -20,8 +20,6 @@ class FavsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         navigationItem.title = "Favorites"
-        
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -47,12 +45,10 @@ class FavsCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
          return favTeams.count
     }
 
@@ -71,9 +67,6 @@ class FavsCollectionViewController: UICollectionViewController {
         curr = indexPath.row
         performSegue(withIdentifier: "teamSegue", sender: self)
     }
-    
-//    func updateArr(favTeams: [String]) {
-//
-//    }
+   
 
 }
