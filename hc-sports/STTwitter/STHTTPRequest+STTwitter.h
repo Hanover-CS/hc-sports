@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Nicolas Seriot. All rights reserved.
 //
 
-#import "STHTTPRequest.h"
+//#import "STHTTPRequest.h"
 #import "STTwitterRequestProtocol.h"
 
 @interface STHTTPRequest (STTwitter) <STTwitterRequestProtocol>

@@ -8,7 +8,7 @@
 
 import UIKit
 import TwitterKit
-import STTwitter
+//import STTwitter
 
 class HighlightsVC: UICollectionViewController {
     var tweets = [AnyObject]()
@@ -28,7 +28,7 @@ class HighlightsVC: UICollectionViewController {
 //        } ) {(error) -> Void in
 //            print(error)
 //        }
-        let client = TWTRAPIClient()
+//        let client = TWTRAPIClient()
 //        self.dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "HanoverPanthers", APIClient: client)
 //        let dataSource = TWTRUserTimelineDataSource(screenName: "HanoverPanthers", apiClient: TWTRAPIClient())
 //        dataSource.includeReplies = true

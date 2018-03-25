@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,7 @@
 		081EBD59901DD9662667977655031F82 /* env_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC2A5A1C8D0F43CC115E135952DE7A /* env_posix.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		098B2F5B897FC29D4E8715B06ACD7614 /* port_posix_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 98CF2BEE52739B1444EE746AADE2FE2F /* port_posix_sse.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		0A567779D3CA18BC397E4B8B45901525 /* testharness.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B975000E6B9C0758C6126E308CCBC5 /* testharness.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0AADB0C40786726F24ED3B76155A7613 /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B7300D141483A1E39AA958F8996B1 /* NSString+STTwitter.m */; };
 		0BD6BAF6ADDB6AE8CDE7ACAED2ACDB32 /* filter_block.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC85E06A1C22EB700B808ED050A0866 /* filter_block.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0C2584DCA0F75C893692616F8993686C /* STTwitterAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9636C73BF82CE40217379EE4648936 /* STTwitterAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CCEA88F60E25C0188CEEA2F746669C8 /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = F7145CBB052E2F37EB450275CF5B7D50 /* hash.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		0CD364230F07D96CC9F9DFACC89026D6 /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = AAC51A8003E64EC82FAFEE10918C2193 /* histogram.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		1550AE32DC5ADF0FCB9BD311A4B5B1B3 /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F84AB8FD061C10AE7351847E5327D23 /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -29,13 +27,9 @@
 		184E4CFD9CC6D8B4378E53C6B5CE5AB4 /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C917A4F8AF8B85E3179E9FAC987F550 /* port.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1912683039E12275176231D29EE07C7E /* mutexlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FBBFFA5E7EA6A212AF08B05B1FBF95 /* mutexlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1AAA30C08DA550BE2FE64A63DF96EA42 /* posix_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F9C5DF604DFD6A33B2661B77CFA79E /* posix_logger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1B2C90E76FFAB8E07E053D37F010B9F1 /* NSDateFormatter+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C952E3FF23696A48DE28CED0D9F6030E /* NSDateFormatter+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B4F55F1D2555C18C623C61A6E7492CF /* db_iter.h in Headers */ = {isa = PBXBuildFile; fileRef = 18114FDF77750BA76187A7931823E7A6 /* db_iter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E9B0030383830BB88C651B470C17336 /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F31AE7550D20024DE24E210CC634E51 /* STHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F106992023C1FFA21495D4CC86BA93F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3697CF7F3C8319A315CECC9856B7E5D /* Twitter.framework */; };
 		2073ECE1B4D058873B8F5E031774FD20 /* block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 09A4191333F4693D8076C2F1D905C282 /* block.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		21FAB77CF4B020A5A8B3ED815DD81636 /* STTwitterAppOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E98E211F4C7FD3C4B30235713CFE3A /* STTwitterAppOnly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		293CAAF740D6DB72FB7F11A920DAA51C /* STTwitterOSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 57FED8101FCC32A07A744BCBC2A00E9B /* STTwitterOSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FB2447194F848B6A27FAA182609566 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EF9AC0688E024B3ACC363ABDE13147E /* status.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3D883CF5DFB392643036923C6B1745 /* status.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F90CCCB03C93484F5810B18080D16D4 /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A4566E7CBD145C94FE7CD7CBAC611 /* logging.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
@@ -46,19 +40,14 @@
 		3DBFD436769841EABCD8865516C7AB07 /* log_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 6744FAD6CA8F6B29A0717D7FBFC2336A /* log_format.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E95058C12588FB186618FB358EB60E1 /* options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 36F597AC91900BC446B0EB7C8493637F /* options.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		3ED6A2D730E9B57B9B98EA2474032487 /* builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D7F9F42F120D1416A062076D77D5BB /* builder.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		420000074F154215B46E6F309C83DA04 /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3810C09FC8D57F92F30440683B22246B /* STTwitterAPI.m */; };
-		42B4D96B70FE255A932ADB5A9BA78350 /* STTwitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F73B97CA81C5685F6E221952B4252C /* STTwitter-dummy.m */; };
 		4434EFEC98AE7B8CB0003F3734CAFB42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D58C7F76492A3C3F09F14FC4ED85B77 /* QuartzCore.framework */; };
 		4465AD0C41B312B6691FCD9C73A8288E /* filter_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = CA365707FDCB51F3D6F40C094AA30DF3 /* filter_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4558224EE107080F62DEA44D55C85FC1 /* repair.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE4475896247C4F3616BC1DDEE137862 /* repair.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		45E45DCE5F063730A35CAD4DF198A9A4 /* merger.h in Headers */ = {isa = PBXBuildFile; fileRef = 12723FB9FB53DAB6F6FCC8E1ED514B48 /* merger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DACC775659E46F3B2DCF60B9556524 /* nanopb-dummy.m */; };
-		46A3818E49D1433821E8DAAA6036BF8D /* STTwitterOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4CCA230D690D4F3828C76FD0CE0132 /* STTwitterOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		472380E3E4CD788E953BA6AD3090C97C /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A8C416806C59D9047A6B7FE4A2CAF0 /* block.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47343845FF35E9F24D26B7EEABD22308 /* port_example.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDE6B31FC059F48AB23FDD4FF15DF83 /* port_example.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4A396D7D7A5DF81544FE09D469655521 /* testharness.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6E980B59DAB08CAF0F20547FB21E1B5C /* testharness.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		4E5612C5E2C9BB2A584E2DD8D5A58B70 /* STTwitterOSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1994043CF569795862A4522D01DC851 /* STTwitterOSRequest.m */; };
-		50C25613490F8FA06C1220DFDB5580F6 /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D13B725664BD1D694CF6041F9B583 /* STTwitterHTML.m */; };
 		53927224C9956F91B958DD562CDCD045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4718476BD04FBF19A49F3242FEE426 /* Foundation.framework */; };
 		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FE398089A95FBC2FA6EB40F676BB44E3 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CA35A784E03C630DA94AB08AD2AEBD9D /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
@@ -71,33 +60,24 @@
 		5CC14863F1CE18295BCA9D191A728C9A /* version_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 504B95CC861C9760848BB7F7101B6976 /* version_set.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		5DD133D587AB8FCB50ED56E220F2FF64 /* merger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 593C872B9D4CB9E90359B918395E2B23 /* merger.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		5EB2754D264321B300106C90A2AB8F05 /* env.cc in Sources */ = {isa = PBXBuildFile; fileRef = 643122BD53BA2D5B7884730588282D53 /* env.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		5F9AFFEAEE832929FB40F9BD87C092B6 /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE4F7BDB9CD3AAD9E38C8C2E592C1E8 /* STHTTPRequest+STTwitter.m */; };
 		60B6F9A2A27BAAA4E56BB71A78DCC6C3 /* log_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = A660C0B2F6279862742797A293927AB1 /* log_reader.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		61794E6BA0AEFCFD394BDB513885CD84 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA606E1230E6CA0F36FD65B72F1C658E /* NSDateFormatter+STTwitter.m */; };
-		657640E5265D144B3856193F2084655A /* STHTTPRequest+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7455E250AC2F4896930EE382CFED5546 /* STHTTPRequest+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65F3308F5618F443DC2BD093BF9B63C8 /* dbformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 346D52E1EA4C803C79CA916B0C49DFBA /* dbformat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6AC0AC455AE22A4B52E53993A42D6853 /* NSError+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8053D32B25D15DE5F940818777A8E320 /* NSError+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DFE6227D6E33511F79157A2EED06F95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4718476BD04FBF19A49F3242FEE426 /* Foundation.framework */; };
 		6EA1F8DE86D6D3C6BB815EFD3FB33192 /* Pods-hc-sportsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5436E301F5758044E4A55C80B4FBF04F /* Pods-hc-sportsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		731EC3C80826D44456B6215C1D1E3F50 /* port_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 63EEE5D856E697440277FB559AC1DF2F /* port_posix.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		7A1E9E138B0DCC32F15043FDECAAB148 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A56298381E1785592514C3E42F48503 /* Accounts.framework */; };
-		7A3FF36970B5A925E868416C72781CF1 /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A572746EB07B352ADADC130E2F94C /* STTwitterOAuth.m */; };
 		7BCBA5822F685281D3151869860AB5E8 /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 56494AC0BF840078370E74DC30351B5C /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CF908BF27D6F7564308939CEC081909 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680D65AE9B51E23F35F04EC0BD1F305 /* random.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9137C98D303DDD6A01D1C7926078C7 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80F4757729D67504713F2CC65864E8BC /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = A938ADFB00E34FA83AFA848D890F5BF3 /* arena.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		81D48643EA10A7CEF4036CC2A967CDEF /* slice.h in Headers */ = {isa = PBXBuildFile; fileRef = 825FC635A7C32DCDED28A0F4B1C7D2A5 /* slice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2009CB88C63F7F667D5FC91C27A51122 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81EBE70A7AB5DF052FF3CDCDAC01F56F /* STTwitterStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 709439BCBA9F9796D9C60060BF4383FC /* STTwitterStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8522410C85B627FD53DD15A9D7C6D2D1 /* db_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 444BF7627882AF4E3EF44AFFB8C31C23 /* db_impl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8771B49B1B66DC9C8F698B814EBB2216 /* JSONSyntaxHighlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E2E828E9657993E9ED724E955680DD /* JSONSyntaxHighlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89171535C10065264E0DC90224E4EB4E /* Pods-hc-sports-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B305E8FF53432319A7A84F09C3D635D /* Pods-hc-sports-dummy.m */; };
-		8CAD24519073FF3D6C76197CE172429B /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A44B6515B307FBB7A350240DA98959 /* STTwitterOS.m */; };
 		8EC8E3E8E5F0C3020829D0AAAF4C8AC4 /* iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = E8ABE6421475D5E1E38D99A39CA640BF /* iterator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		8F1C3C7FB8997FA0CF8E119299DD78D4 /* coding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4049BD9213087CAD2B2FF7429A69A8C0 /* coding.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8F7BDF1204C33E7BD243AF75EC16CF52 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F197EFD7F76B37F414C40EBCC70B80 /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FA42B0FF32F02B636DFD634D554A1D4 /* coding.cc in Sources */ = {isa = PBXBuildFile; fileRef = 084C66213EEF8B7C72BBD9FFFAA94B47 /* coding.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		9111356C0E0CD742087AB00217BA8FCB /* BAVPlistNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE656767C35AC4F4B95AF08C6647E71 /* BAVPlistNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91A4CEB58A353FE3D5BECC447BAACE78 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 260317929A38565A76B815394BBF34E4 /* logging.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9314375F5FB642ECBC9971BABC836B8F /* env_posix_test_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B30A78FE3CABD2051A72A441FAA611 /* env_posix_test_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		93A998B6FEBDCA69102BE64B3E5A43BC /* filter_block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 773D052C1E10174F9D39F50ED8016C24 /* filter_block.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
@@ -108,18 +88,13 @@
 		99034D931BF1D6B15F5067D91893E07C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B40402AC8D5CC7E33B4B29C4D08AF2 /* UIKit.framework */; };
 		9A21CB30C6FD9189472505B9C98BD5F3 /* dumpfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A2A846F3C6734EA92B81DF7C740B3 /* dumpfile.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		9A3E29BCA5FBDA98C5BE136BA9485130 /* port_posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5F0DD3D8D98276EB5675CBE0E64683 /* port_posix.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9ABDF95B359DDBF6279CAE57B52E78D8 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7F2B5CE722F320FF564761CE3DA1C /* NSError+STTwitter.m */; };
 		9BCA33B9DB1ED5A6D53F2E783B5D55A9 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F38392FF45BAB5CBE646C4D04D42A25 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CDA892BEF2D34AF2F8F88BF55401508 /* STTwitterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C63E4434B664FA09C0351AD69994F8DC /* STTwitterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D40804A22EBA95694E40EB3C71004C8 /* db_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6AB509E25A58FF1B976EF6A8B1CE72C5 /* db_impl.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		9EBBC83F23F6078033A4194476AE5410 /* STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 233BF106689F51B07D8B4502752581CD /* STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3B390C2CC9CDC12E88987C9B80EA0DB /* leveldb-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DED22E0FDFF61A72DA1E17164448095B /* leveldb-library-dummy.m */; };
 		A5689AA693CC1FB6735731F256D5E744 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = BD09C51B2EDBFB0550371E8E94A56F26 /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A57019745D87512075963C8F543916F6 /* cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC380A5D11AAABE3B75484BC623D8AE /* cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A579DF19BFD2C5C9BA9ADE154A552549 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FD70DB26469AAC276C107FA7676219 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5E8ED57B0C6F28417A66D4102B60205 /* version_edit.cc in Sources */ = {isa = PBXBuildFile; fileRef = B54D9EAF7A2D37B4901A57596204BDD7 /* version_edit.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		A5F125FDE593B62DB720A7DA9ECB3FD6 /* NSString+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6B8FAEBCAEA43C7025997ACDEDCE6C /* NSString+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7BD52C47B35DE74522A0D145A40CA79 /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 34397F236604CC23CBAC276CED1056CA /* JSONSyntaxHighlight.m */; };
 		A8E084583EE884F1E36F7D8E0F5DD9FB /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E81F2BDC849630E46F41712E38E109A /* crc32c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		A94DD7D1A5DB25D0958854C2C698E282 /* Pods-hc-sportsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DED794DD4B14A16CCF3B5B77F3BF3B5 /* Pods-hc-sportsTests-dummy.m */; };
 		A9701C6F33492296354A0A64D220C9E7 /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD65619B1996548994CB401849E19EE5 /* c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
@@ -129,16 +104,10 @@
 		AFB07038C9465FA5D4DED75CE78A4905 /* skiplist.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8CD884F3F7D7DDBF3B170EC4092DDA /* skiplist.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B0A9906F5C64376F4AD621211F51BA98 /* write_batch.cc in Sources */ = {isa = PBXBuildFile; fileRef = E744DCEEDE36DC1B3460D63153FF2FA9 /* write_batch.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		B333806228F3039CFBE1B3A0DF7CC540 /* dbformat.cc in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE5067700D9FF880C3AC9D3536CB /* dbformat.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		B355FEB6AB9995944DB366EDD6CB556E /* STTwitterOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C30DC60B0849D308123B9C047AA874 /* STTwitterOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4922BBC11C0F148A41061E63A4DA607 /* STTwitterStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 135B430E944A0C797BCE896558AA01F2 /* STTwitterStreamParser.m */; };
 		B4FF31470CD0212830F4057B759A52B4 /* dumpfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C58048855F8FE1A495E7783B11CF5BD /* dumpfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B591F2CDF96903636AA52EA67708E97C /* filename.cc in Sources */ = {isa = PBXBuildFile; fileRef = D24EB825E95D0085679057976D989BAD /* filename.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		B9017AB1ABCCB08D8D4F48F9EF889747 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F1E39388FF1BECB4FE80454278E300 /* STHTTPRequest.m */; };
 		BD4DBE66C5321DDDADC94E55B08F934A /* table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D9BB2084A63DAE91E340B7027A4EC /* table.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		BE830CC3262BEFC804CBE9AD8C1E0A04 /* table_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = E90504575FD97D8F342D36C5A9299521 /* table_builder.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		BEBA74D09F720652D0850CDC8E62B0C2 /* STTwitterHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2D89A1887AD0D7BC02BF2CA7E90E87 /* STTwitterHTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C03A29E3109D96D96203E98CC011B93D /* STTwitter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE241FFF97286272195D39F142631AF9 /* STTwitter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C047EE2B7B255C6D8A50B724EB879E50 /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3957E6160ED0BFD6A391E634674AAF5F /* BAVPlistNode.m */; };
 		C14D5C4335D506E9D97E71608A06963D /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = E9696DA0AB4FA2AFDED3FC3AB0E43EC0 /* hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1C83F523CB30D8028408732E65BFEBE /* Pods-hc-sports-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DC16BFBE0E9465445DDAAE36038295 /* Pods-hc-sports-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43DF6C7E1E7F3148A016F5D278717A8 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 29068A6DDDC4EA7E4605A4A1BC9B3084 /* format.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -161,9 +130,7 @@
 		E7A96AFFA285669F36760A9B2C84D098 /* log_writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CEDCDFC0547E53CB0ADEC211AF1E9B /* log_writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E8CFBF0102A47C42F7AE900BA70D8743 /* table_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 012AEEC1EF92AAA6142AE072EAB8688B /* table_cache.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		EE8F4C47A1F1611BF2B344E08EA04DF4 /* filename.h in Headers */ = {isa = PBXBuildFile; fileRef = 6671583C921ADDC722EA9352C0332E5F /* filename.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F6C737D773C90D2FD54EA40376115A0C /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 97089CEA483ED5315756F74A81474D4B /* STTwitterAppOnly.m */; };
 		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6CB5849D21593D0C8628BD67E2B91C /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F8F7C1C544C8526A0A064A8B2077CBC8 /* STTwitterRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B65AA115913A3F5C18B51C9A00A2507 /* STTwitterRequestProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 829DAF4D5AD924C3BE9D14C49CB661FD /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F774625589D2D85048AA9897836BCBD /* GoogleToolboxForMac-dummy.m */; };
 		FC311A1C8EF93F12AC83F98EF7004850 /* log_reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7980D19B4668980210742AAAFEBCA7 /* log_reader.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -206,217 +173,180 @@
 		0080F726F6A847880DEAFC69C018138C /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		00A8C416806C59D9047A6B7FE4A2CAF0 /* block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block.h; path = table/block.h; sourceTree = "<group>"; };
 		00C9CE972DB0818E5635CF30A1EB9076 /* Pods-hc-sportsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sportsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		012AEEC1EF92AAA6142AE072EAB8688B /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
+		012AEEC1EF92AAA6142AE072EAB8688B /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
 		01CD2BA84E5E0F7F6340EB57990AF379 /* two_level_iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = two_level_iterator.h; path = table/two_level_iterator.h; sourceTree = "<group>"; };
 		02966C3882326A86F4AFDC170AAD89C0 /* Pods-hc-sportsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hc-sportsTests.modulemap"; sourceTree = "<group>"; };
-		029B933B71ED4D2800AEEAB58CB45269 /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
+		029B933B71ED4D2800AEEAB58CB45269 /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
 		0337551A20B23A572B8AEC28924E42B6 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		05FBBFFA5E7EA6A212AF08B05B1FBF95 /* mutexlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutexlock.h; path = util/mutexlock.h; sourceTree = "<group>"; };
 		07CEDCDFC0547E53CB0ADEC211AF1E9B /* log_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_writer.h; path = db/log_writer.h; sourceTree = "<group>"; };
 		07DC16BFBE0E9465445DDAAE36038295 /* Pods-hc-sports-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hc-sports-umbrella.h"; sourceTree = "<group>"; };
-		084C66213EEF8B7C72BBD9FFFAA94B47 /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
-		09A4191333F4693D8076C2F1D905C282 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
+		084C66213EEF8B7C72BBD9FFFAA94B47 /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
+		09A4191333F4693D8076C2F1D905C282 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
 		0B7980D19B4668980210742AAAFEBCA7 /* log_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_reader.h; path = db/log_reader.h; sourceTree = "<group>"; };
 		0D5F976E8ADD306F218BB55BC3D09585 /* Pods-hc-sportsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hc-sportsUITests.modulemap"; sourceTree = "<group>"; };
-		0D8137759A42C2BC72DFF79B585BA9E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EE8CA5273440611246AB45DB0AFDED3 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		0FC85E06A1C22EB700B808ED050A0866 /* filter_block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_block.h; path = table/filter_block.h; sourceTree = "<group>"; };
 		111BEE3F6903B4BF49ED1C65C3EE8992 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
 		12723FB9FB53DAB6F6FCC8E1ED514B48 /* merger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = merger.h; path = table/merger.h; sourceTree = "<group>"; };
-		135B430E944A0C797BCE896558AA01F2 /* STTwitterStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterStreamParser.m; path = STTwitter/STTwitterStreamParser.m; sourceTree = "<group>"; };
 		156F96DA194E12879DEC9C2E1280CA57 /* leveldb-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "leveldb-library.modulemap"; sourceTree = "<group>"; };
-		15C30DC60B0849D308123B9C047AA874 /* STTwitterOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOS.h; path = STTwitter/STTwitterOS.h; sourceTree = "<group>"; };
-		17F93CA192B3722B8F55F6F94DF76AE5 /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
+		17F93CA192B3722B8F55F6F94DF76AE5 /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
 		18114FDF77750BA76187A7931823E7A6 /* db_iter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_iter.h; path = db/db_iter.h; sourceTree = "<group>"; };
 		199A49E29727BBF1727F36E70CB32938 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2CE397A939BC38281D85B03158F27E /* write_batch_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch_internal.h; path = db/write_batch_internal.h; sourceTree = "<group>"; };
-		1F31AE7550D20024DE24E210CC634E51 /* STHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHTTPRequest.h; path = STTwitter/Vendor/STHTTPRequest.h; sourceTree = "<group>"; };
 		2009CB88C63F7F667D5FC91C27A51122 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		21979B878DCBA3EFC3387EABCCFBD6F4 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
 		21B40402AC8D5CC7E33B4B29C4D08AF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		233BF106689F51B07D8B4502752581CD /* STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitter.h; path = STTwitter/STTwitter.h; sourceTree = "<group>"; };
 		242759ABC817ED7CDE53A8232F5DC83D /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		24C62FD308BA2C6B04BA80C1A7B3D6FC /* comparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comparator.h; path = include/leveldb/comparator.h; sourceTree = "<group>"; };
 		260317929A38565A76B815394BBF34E4 /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = util/logging.h; sourceTree = "<group>"; };
 		2680D65AE9B51E23F35F04EC0BD1F305 /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = util/random.h; sourceTree = "<group>"; };
-		26D7F9F42F120D1416A062076D77D5BB /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
+		26D7F9F42F120D1416A062076D77D5BB /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
 		29068A6DDDC4EA7E4605A4A1BC9B3084 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = table/format.h; sourceTree = "<group>"; };
 		2A56298381E1785592514C3E42F48503 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
 		2B055290CB5335700F163BEA52620875 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nanopb.modulemap; sourceTree = "<group>"; };
-		2B65AA115913A3F5C18B51C9A00A2507 /* STTwitterRequestProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterRequestProtocol.h; path = STTwitter/STTwitterRequestProtocol.h; sourceTree = "<group>"; };
-		2CE7F2B5CE722F320FF564761CE3DA1C /* NSError+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+STTwitter.m"; path = "STTwitter/NSError+STTwitter.m"; sourceTree = "<group>"; };
 		2DED794DD4B14A16CCF3B5B77F3BF3B5 /* Pods-hc-sportsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hc-sportsTests-dummy.m"; sourceTree = "<group>"; };
 		2E0B7B1DC8494764F587D648C1D85957 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
 		2F6C80F6FE1C0B6A7F056B99F0AA0A7F /* atomic_pointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = atomic_pointer.h; path = port/atomic_pointer.h; sourceTree = "<group>"; };
 		2F84AB8FD061C10AE7351847E5327D23 /* version_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_set.h; path = db/version_set.h; sourceTree = "<group>"; };
 		307420D3E94AC49444536C52B75E748C /* Pods-hc-sportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BCCA31B2A239AF43C3C8F765AADC83 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
-		32144B8314C69109D5B7CC863E42D06C /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
-		34397F236604CC23CBAC276CED1056CA /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = STTwitter/Vendor/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
+		32144B8314C69109D5B7CC863E42D06C /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
 		346D52E1EA4C803C79CA916B0C49DFBA /* dbformat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dbformat.h; path = db/dbformat.h; sourceTree = "<group>"; };
-		35E2E828E9657993E9ED724E955680DD /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = STTwitter/Vendor/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
-		36F597AC91900BC446B0EB7C8493637F /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
-		3810C09FC8D57F92F30440683B22246B /* STTwitterAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAPI.m; path = STTwitter/STTwitterAPI.m; sourceTree = "<group>"; };
-		3957E6160ED0BFD6A391E634674AAF5F /* BAVPlistNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAVPlistNode.m; path = STTwitter/Vendor/BAVPlistNode.m; sourceTree = "<group>"; };
+		36F597AC91900BC446B0EB7C8493637F /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
 		3B4BD51A5FDC30D98FF8EE59E60C6FB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D43C81042BFDE507AEC422FB09AD9D7 /* Pods-hc-sportsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sportsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D58C7F76492A3C3F09F14FC4ED85B77 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3D7A572746EB07B352ADADC130E2F94C /* STTwitterOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOAuth.m; path = STTwitter/STTwitterOAuth.m; sourceTree = "<group>"; };
-		3E6B8FAEBCAEA43C7025997ACDEDCE6C /* NSString+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STTwitter.h"; path = "STTwitter/NSString+STTwitter.h"; sourceTree = "<group>"; };
-		3F1A2A846F3C6734EA92B81DF7C740B3 /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
+		3F1A2A846F3C6734EA92B81DF7C740B3 /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
 		3F5F0DD3D8D98276EB5675CBE0E64683 /* port_posix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_posix.h; path = port/port_posix.h; sourceTree = "<group>"; };
 		4049BD9213087CAD2B2FF7429A69A8C0 /* coding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coding.h; path = util/coding.h; sourceTree = "<group>"; };
-		40969F81C07D7E46B88255AFDB85E303 /* Pods_hc_sportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hc_sportsUITests.framework; path = "Pods-hc-sportsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40969F81C07D7E46B88255AFDB85E303 /* Pods_hc_sportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F197EFD7F76B37F414C40EBCC70B80 /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = include/leveldb/table.h; sourceTree = "<group>"; };
 		42B30A78FE3CABD2051A72A441FAA611 /* env_posix_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_posix_test_helper.h; path = util/env_posix_test_helper.h; sourceTree = "<group>"; };
 		444BF7627882AF4E3EF44AFFB8C31C23 /* db_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_impl.h; path = db/db_impl.h; sourceTree = "<group>"; };
 		45DF70573F4756F2765E3BAC5D3507F0 /* Pods-hc-sportsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sportsTests-frameworks.sh"; sourceTree = "<group>"; };
-		460551DF0D7079C2DCCB29FC0D71FE08 /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
+		460551DF0D7079C2DCCB29FC0D71FE08 /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
 		4A295822928C7F18E15791398556F667 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
-		4B4C34EAFAE5F0C26867317A5C260C41 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
-		4B9636C73BF82CE40217379EE4648936 /* STTwitterAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAPI.h; path = STTwitter/STTwitterAPI.h; sourceTree = "<group>"; };
+		4B4C34EAFAE5F0C26867317A5C260C41 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
 		4D69C55446915C699657152CE1DD8A28 /* block_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block_builder.h; path = table/block_builder.h; sourceTree = "<group>"; };
-		504B95CC861C9760848BB7F7101B6976 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
-		505554E991546BB59A8A0F02252A431D /* STTwitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STTwitter.framework; path = STTwitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504B95CC861C9760848BB7F7101B6976 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
+		505554E991546BB59A8A0F02252A431D /* STTwitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STTwitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5436E301F5758044E4A55C80B4FBF04F /* Pods-hc-sportsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hc-sportsTests-umbrella.h"; sourceTree = "<group>"; };
 		56494AC0BF840078370E74DC30351B5C /* write_batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch.h; path = include/leveldb/write_batch.h; sourceTree = "<group>"; };
-		57F1E39388FF1BECB4FE80454278E300 /* STHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHTTPRequest.m; path = STTwitter/Vendor/STHTTPRequest.m; sourceTree = "<group>"; };
-		57FED8101FCC32A07A744BCBC2A00E9B /* STTwitterOSRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOSRequest.h; path = STTwitter/STTwitterOSRequest.h; sourceTree = "<group>"; };
-		593C872B9D4CB9E90359B918395E2B23 /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
-		59DFBED6DDD521CAB1E6E36FBD4DD1C2 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		593C872B9D4CB9E90359B918395E2B23 /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
+		59DFBED6DDD521CAB1E6E36FBD4DD1C2 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD942AC39E298D3C97E0DB8F7CEC94F /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		5B7F16CF674FABD938CC3DEB269E263C /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		5E4E0262BE5FB5A645994C3F076234E9 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		5F32D196293B8F2D00E95518EFBF42E0 /* testutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testutil.h; path = util/testutil.h; sourceTree = "<group>"; };
 		61F6CB2522B05E010A92DB0F2E23DCB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6238D9F63F2EF0D14A7B91C0C94A0380 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
+		6238D9F63F2EF0D14A7B91C0C94A0380 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
 		6365A394290D14759D32B5B94EA8559A /* Pods-hc-sportsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hc-sportsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		637F906AF9AABA953DB8DC57E420FA55 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		63EEE5D856E697440277FB559AC1DF2F /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
-		643122BD53BA2D5B7884730588282D53 /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
+		63EEE5D856E697440277FB559AC1DF2F /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
+		643122BD53BA2D5B7884730588282D53 /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
 		643C1586855B4AF75307455270C8F45A /* snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = db/snapshot.h; sourceTree = "<group>"; };
 		64B975000E6B9C0758C6126E308CCBC5 /* testharness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testharness.h; path = util/testharness.h; sourceTree = "<group>"; };
 		6671583C921ADDC722EA9352C0332E5F /* filename.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filename.h; path = db/filename.h; sourceTree = "<group>"; };
 		6744FAD6CA8F6B29A0717D7FBFC2336A /* log_format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_format.h; path = db/log_format.h; sourceTree = "<group>"; };
-		679D13B725664BD1D694CF6041F9B583 /* STTwitterHTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterHTML.m; path = STTwitter/STTwitterHTML.m; sourceTree = "<group>"; };
 		68839D2E57019B4523AD85181DCCE4AE /* leveldb-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.xcconfig"; sourceTree = "<group>"; };
-		6AB509E25A58FF1B976EF6A8B1CE72C5 /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
+		6AB509E25A58FF1B976EF6A8B1CE72C5 /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
 		6C917A4F8AF8B85E3179E9FAC987F550 /* port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port.h; path = port/port.h; sourceTree = "<group>"; };
 		6D68C7CE222D31C7FD76A8150F2EE4D0 /* Pods-hc-sports.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hc-sports.modulemap"; sourceTree = "<group>"; };
-		6E980B59DAB08CAF0F20547FB21E1B5C /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
+		6E980B59DAB08CAF0F20547FB21E1B5C /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
 		6F393737B35317F9E4042BBB76D9A509 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		6F510A564732B9A8B071E4ADB037E4ED /* Pods_hc_sportsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hc_sportsTests.framework; path = "Pods-hc-sportsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F510A564732B9A8B071E4ADB037E4ED /* Pods_hc_sportsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE91442F9D83A1833F760E531C5BFBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		709439BCBA9F9796D9C60060BF4383FC /* STTwitterStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterStreamParser.h; path = STTwitter/STTwitterStreamParser.h; sourceTree = "<group>"; };
-		7402264F6FF9E9A83844CC2EE0BC2BAA /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		7402264F6FF9E9A83844CC2EE0BC2BAA /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		7427ED52D1D27AD90856FFE77EF7DFF7 /* Pods-hc-sportsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hc-sportsUITests-dummy.m"; sourceTree = "<group>"; };
-		7455E250AC2F4896930EE382CFED5546 /* STHTTPRequest+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STHTTPRequest+STTwitter.h"; path = "STTwitter/STHTTPRequest+STTwitter.h"; sourceTree = "<group>"; };
-		76B5419E0AC68DC06212323DD09AF8F8 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76ED1E9D7BB38238DE040D691ADBD96B /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
-		773D052C1E10174F9D39F50ED8016C24 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
-		7A4CCA230D690D4F3828C76FD0CE0132 /* STTwitterOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOAuth.h; path = STTwitter/STTwitterOAuth.h; sourceTree = "<group>"; };
+		76B5419E0AC68DC06212323DD09AF8F8 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76ED1E9D7BB38238DE040D691ADBD96B /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
+		773D052C1E10174F9D39F50ED8016C24 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
 		7B305E8FF53432319A7A84F09C3D635D /* Pods-hc-sports-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hc-sports-dummy.m"; sourceTree = "<group>"; };
 		7C58048855F8FE1A495E7783B11CF5BD /* dumpfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dumpfile.h; path = include/leveldb/dumpfile.h; sourceTree = "<group>"; };
-		7C8D9BB2084A63DAE91E340B7027A4EC /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
+		7C8D9BB2084A63DAE91E340B7027A4EC /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
 		7E4DB975EC8172DD498994EA0014DB8B /* Pods-hc-sports-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hc-sports-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7EC1F01B913F5D46134C93C93E1B6DB4 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = options.h; path = include/leveldb/options.h; sourceTree = "<group>"; };
 		7F8CD884F3F7D7DDBF3B170EC4092DDA /* skiplist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = skiplist.h; path = db/skiplist.h; sourceTree = "<group>"; };
-		8053D32B25D15DE5F940818777A8E320 /* NSError+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+STTwitter.h"; path = "STTwitter/NSError+STTwitter.h"; sourceTree = "<group>"; };
 		825FC635A7C32DCDED28A0F4B1C7D2A5 /* slice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice.h; path = include/leveldb/slice.h; sourceTree = "<group>"; };
 		829DAF4D5AD924C3BE9D14C49CB661FD /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		82D897769AD16ACE9EA0D8DA7AEBE71E /* Pods-hc-sports-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sports-resources.sh"; sourceTree = "<group>"; };
-		83274DE3FC25B37FF33C0A817B5C6128 /* STTwitter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-prefix.pch"; sourceTree = "<group>"; };
 		83FBDDACAE086AEA6A4E60567A64C263 /* Pods-hc-sportsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sportsUITests-resources.sh"; sourceTree = "<group>"; };
-		84A263DC1B2067B43B45A10FB5ABB04E /* STTwitter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STTwitter.modulemap; sourceTree = "<group>"; };
 		86E6128095DD67075312E5E25C613E8D /* Pods-hc-sportsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hc-sportsUITests-umbrella.h"; sourceTree = "<group>"; };
 		885BE007722BFD66BC9090CCEBC29894 /* Pods-hc-sports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sports.release.xcconfig"; sourceTree = "<group>"; };
-		8A5A4566E7CBD145C94FE7CD7CBAC611 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
-		8D4AF9C40D10A73618AEB173F218BCFD /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		8A5A4566E7CBD145C94FE7CD7CBAC611 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
+		8D4AF9C40D10A73618AEB173F218BCFD /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		8DEBE7397E09A5D217EEDED4EA15A9AD /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		8F774625589D2D85048AA9897836BCBD /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9606E7035B08235C23E05F9B321DEA8D /* version_edit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_edit.h; path = db/version_edit.h; sourceTree = "<group>"; };
-		97089CEA483ED5315756F74A81474D4B /* STTwitterAppOnly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAppOnly.m; path = STTwitter/STTwitterAppOnly.m; sourceTree = "<group>"; };
-		98CF2BEE52739B1444EE746AADE2FE2F /* port_posix_sse.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix_sse.cc; path = port/port_posix_sse.cc; sourceTree = "<group>"; };
+		98CF2BEE52739B1444EE746AADE2FE2F /* port_posix_sse.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = port_posix_sse.cc; path = port/port_posix_sse.cc; sourceTree = "<group>"; };
 		9A8B0747660779F5F0FF8FBA7A888A70 /* Pods-hc-sportsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hc-sportsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C6CB5849D21593D0C8628BD67E2B91C /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		9D0CB7FA37830DFC0F15F28CDF57E507 /* Pods-hc-sportsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hc-sportsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D2D89A1887AD0D7BC02BF2CA7E90E87 /* STTwitterHTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterHTML.h; path = STTwitter/STTwitterHTML.h; sourceTree = "<group>"; };
-		9E81F2BDC849630E46F41712E38E109A /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
-		9ECC2A5A1C8D0F43CC115E135952DE7A /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
+		9E81F2BDC849630E46F41712E38E109A /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
+		9ECC2A5A1C8D0F43CC115E135952DE7A /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
 		9F38392FF45BAB5CBE646C4D04D42A25 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
 		9FC380A5D11AAABE3B75484BC623D8AE /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
-		A3A44B6515B307FBB7A350240DA98959 /* STTwitterOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOS.m; path = STTwitter/STTwitterOS.m; sourceTree = "<group>"; };
 		A506918AE3B114DEC7E5EDBCFC6D10B1 /* Pods-hc-sports-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sports-frameworks.sh"; sourceTree = "<group>"; };
-		A660C0B2F6279862742797A293927AB1 /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
+		A660C0B2F6279862742797A293927AB1 /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
 		A6C6109A6A6FC05573F78865F77F04C6 /* table_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_builder.h; path = include/leveldb/table_builder.h; sourceTree = "<group>"; };
-		A6E98E211F4C7FD3C4B30235713CFE3A /* STTwitterAppOnly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAppOnly.h; path = STTwitter/STTwitterAppOnly.h; sourceTree = "<group>"; };
-		A71BC1002874AA781EFD9EB78FF12737 /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
+		A71BC1002874AA781EFD9EB78FF12737 /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
 		A7F9C5DF604DFD6A33B2661B77CFA79E /* posix_logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = posix_logger.h; path = util/posix_logger.h; sourceTree = "<group>"; };
-		A938ADFB00E34FA83AFA848D890F5BF3 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
+		A938ADFB00E34FA83AFA848D890F5BF3 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
 		AA9137C98D303DDD6A01D1C7926078C7 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
-		AAC51A8003E64EC82FAFEE10918C2193 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
-		AD65619B1996548994CB401849E19EE5 /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
+		AAC51A8003E64EC82FAFEE10918C2193 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
+		AD65619B1996548994CB401849E19EE5 /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
 		ADE774DE9A128C97036F98E488060CD7 /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
-		AE4475896247C4F3616BC1DDEE137862 /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
-		AEE4F7BDB9CD3AAD9E38C8C2E592C1E8 /* STHTTPRequest+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STHTTPRequest+STTwitter.m"; path = "STTwitter/STHTTPRequest+STTwitter.m"; sourceTree = "<group>"; };
-		B1AFB5DAB6660839784D1766E2F43024 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
-		B54D9EAF7A2D37B4901A57596204BDD7 /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
+		AE4475896247C4F3616BC1DDEE137862 /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
+		B1AFB5DAB6660839784D1766E2F43024 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
+		B54D9EAF7A2D37B4901A57596204BDD7 /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
 		B8C015520A592E953258975B92C89A00 /* memtable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memtable.h; path = db/memtable.h; sourceTree = "<group>"; };
 		B97228831E9BE4BBECD6B28A463D81CA /* Pods-hc-sportsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sportsTests-resources.sh"; sourceTree = "<group>"; };
-		BA606E1230E6CA0F36FD65B72F1C658E /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+STTwitter.m"; path = "STTwitter/NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
 		BB7C76F865269D120303CA41634B2A4C /* table_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_cache.h; path = db/table_cache.h; sourceTree = "<group>"; };
 		BBDB491B357014DF07E89EB6EEFF3B03 /* leveldb-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-umbrella.h"; sourceTree = "<group>"; };
 		BC4718476BD04FBF19A49F3242FEE426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BC6D0B156FD0D9A86766B49F635FFC68 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		BCE916BBA3C5716DCF724217B98237C5 /* Pods_hc_sports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hc_sports.framework; path = "Pods-hc-sports.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE916BBA3C5716DCF724217B98237C5 /* Pods_hc_sports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD09C51B2EDBFB0550371E8E94A56F26 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
 		C61ACC2401776321CE0882321A66E29B /* Pods-hc-sportsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hc-sportsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C63E4434B664FA09C0351AD69994F8DC /* STTwitterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterProtocol.h; path = STTwitter/STTwitterProtocol.h; sourceTree = "<group>"; };
 		C8E255373ABFBC291BF7426BE2501FCE /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		C952E3FF23696A48DE28CED0D9F6030E /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+STTwitter.h"; path = "STTwitter/NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
-		CA35A784E03C630DA94AB08AD2AEBD9D /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		CA35A784E03C630DA94AB08AD2AEBD9D /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		CA365707FDCB51F3D6F40C094AA30DF3 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
 		CC2093AE59BBA09F4030F1F788C456EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF7AAF5EF45AC12DC37B61B089A02906 /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
+		CF7AAF5EF45AC12DC37B61B089A02906 /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
 		CFFA9088AD0563268D61DBC7F885ECAB /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
-		D1F73B97CA81C5685F6E221952B4252C /* STTwitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STTwitter-dummy.m"; sourceTree = "<group>"; };
-		D24EB825E95D0085679057976D989BAD /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
+		D24EB825E95D0085679057976D989BAD /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
 		D3C68BBEAC49C0BA084FDC3175F360EF /* builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = builder.h; path = db/builder.h; sourceTree = "<group>"; };
 		D3DACC775659E46F3B2DCF60B9556524 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		D5B69F339CCB6970BD63923FA4FBA6FE /* Pods-hc-sports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sports.debug.xcconfig"; sourceTree = "<group>"; };
 		D980DD224292426A5200A184FBB34861 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
-		DBE656767C35AC4F4B95AF08C6647E71 /* BAVPlistNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAVPlistNode.h; path = STTwitter/Vendor/BAVPlistNode.h; sourceTree = "<group>"; };
 		DC9823F5AB4693F298CF524ECCB0DCC9 /* iterator_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator_wrapper.h; path = table/iterator_wrapper.h; sourceTree = "<group>"; };
 		DED22E0FDFF61A72DA1E17164448095B /* leveldb-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "leveldb-library-dummy.m"; sourceTree = "<group>"; };
 		DED5FF8199CAB7B318177C5DA58CDCAA /* db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db.h; path = include/leveldb/db.h; sourceTree = "<group>"; };
 		DFDE6B31FC059F48AB23FDD4FF15DF83 /* port_example.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_example.h; path = port/port_example.h; sourceTree = "<group>"; };
 		E11FA14F4FA35584D702886B131F16C1 /* Pods-hc-sportsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hc-sportsUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E3697CF7F3C8319A315CECC9856B7E5D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Twitter.framework; sourceTree = DEVELOPER_DIR; };
-		E3DEAE5067700D9FF880C3AC9D3536CB /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
-		E5FE7CAC17A2D0E253F0F6DC63543BF1 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DEAE5067700D9FF880C3AC9D3536CB /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
+		E5FE7CAC17A2D0E253F0F6DC63543BF1 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FB2447194F848B6A27FAA182609566 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
-		E744DCEEDE36DC1B3460D63153FF2FA9 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
+		E744DCEEDE36DC1B3460D63153FF2FA9 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
 		E80CFA1808F9FFF6F9D156BC6A27D976 /* thread_annotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thread_annotations.h; path = port/thread_annotations.h; sourceTree = "<group>"; };
-		E8ABE6421475D5E1E38D99A39CA640BF /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
-		E90504575FD97D8F342D36C5A9299521 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
+		E8ABE6421475D5E1E38D99A39CA640BF /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
+		E90504575FD97D8F342D36C5A9299521 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
 		E9696DA0AB4FA2AFDED3FC3AB0E43EC0 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = util/hash.h; sourceTree = "<group>"; };
 		E9A1858BF537AAC5C462AAB596DF944E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9FD70DB26469AAC276C107FA7676219 /* c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = c.h; path = include/leveldb/c.h; sourceTree = "<group>"; };
 		EB3365E99EDDF1592E83D6755D1A037A /* Pods-hc-sportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hc-sportsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EB8B7300D141483A1E39AA958F8996B1 /* NSString+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STTwitter.m"; path = "STTwitter/NSString+STTwitter.m"; sourceTree = "<group>"; };
 		EC14D15C24EE8705857BEE6DCD53A013 /* Pods-hc-sports-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hc-sports-acknowledgements.plist"; sourceTree = "<group>"; };
 		ECED841EFECEB6FDA9CF3B57E0B6366A /* arena.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arena.h; path = util/arena.h; sourceTree = "<group>"; };
-		EECB1E91DA9A4547CA2F75AA7559BBA9 /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
+		EECB1E91DA9A4547CA2F75AA7559BBA9 /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
 		EF414806165F6843B9D334F566F95E5B /* histogram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = histogram.h; path = util/histogram.h; sourceTree = "<group>"; };
-		F1994043CF569795862A4522D01DC851 /* STTwitterOSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOSRequest.m; path = STTwitter/STTwitterOSRequest.m; sourceTree = "<group>"; };
-		F43DE391A72EC2F07358E521BB7EB7D1 /* STTwitter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STTwitter.xcconfig; sourceTree = "<group>"; };
 		F66186A3D759C15C85FC11371509D498 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		F7145CBB052E2F37EB450275CF5B7D50 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
+		F7145CBB052E2F37EB450275CF5B7D50 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
 		FB3D883CF5DFB392643036923C6B1745 /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
 		FD330CB4A3074A9C6379384A2F00D918 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
-		FDFD6C10D3ADD000963003A54D768086 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
-		FE241FFF97286272195D39F142631AF9 /* STTwitter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-umbrella.h"; sourceTree = "<group>"; };
+		FDFD6C10D3ADD000963003A54D768086 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
 		FE398089A95FBC2FA6EB40F676BB44E3 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -499,7 +429,6 @@
 			children = (
 				DF1DB102EA567D65CF30EEE7915913AD /* Frameworks */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -619,22 +548,7 @@
 				1F2CE397A939BC38281D85B03158F27E /* write_batch_internal.h */,
 				A09DEA6B4EF27E9B70DEBA3C82BF78CB /* Support Files */,
 			);
-			name = "leveldb-library";
 			path = "leveldb-library";
-			sourceTree = "<group>";
-		};
-		229878B1509CE4607034A4ED1063D299 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D8137759A42C2BC72DFF79B585BA9E4 /* Info.plist */,
-				84A263DC1B2067B43B45A10FB5ABB04E /* STTwitter.modulemap */,
-				F43DE391A72EC2F07358E521BB7EB7D1 /* STTwitter.xcconfig */,
-				D1F73B97CA81C5685F6E221952B4252C /* STTwitter-dummy.m */,
-				83274DE3FC25B37FF33C0A817B5C6128 /* STTwitter-prefix.pch */,
-				FE241FFF97286272195D39F142631AF9 /* STTwitter-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/STTwitter";
 			sourceTree = "<group>";
 		};
 		26E7DEAFDAAA0B6714B9A4E7ADE0E801 /* TwitterKit */ = {
@@ -643,7 +557,6 @@
 				C888BF26B6386F21D7B12ED41A462CE0 /* Frameworks */,
 				073DA15D2B5678248B3E4202AB40C48E /* Resources */,
 			);
-			name = TwitterKit;
 			path = TwitterKit;
 			sourceTree = "<group>";
 		};
@@ -652,7 +565,6 @@
 			children = (
 				561A7875BD422BE59F06610B48BDAF9D /* Frameworks */,
 			);
-			name = FirebaseDatabase;
 			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
@@ -661,7 +573,6 @@
 			children = (
 				8E9B3C042146E0A818A8E838321B8B0D /* Frameworks */,
 			);
-			name = TwitterCore;
 			path = TwitterCore;
 			sourceTree = "<group>";
 		};
@@ -731,7 +642,6 @@
 				D53CB47AD1836024F29075592DAACD8B /* GoogleToolboxForMac */,
 				1EA33D1C662371CCF9DAADEA62350362 /* leveldb-library */,
 				F3A7A1C20207258B3F3B5959232C2B43 /* nanopb */,
-				DA77D6068C33E2C06D7D5675BEA915F6 /* STTwitter */,
 				4084E4748D6BBF280D4E550AE44CD6D6 /* TwitterCore */,
 				26E7DEAFDAAA0B6714B9A4E7ADE0E801 /* TwitterKit */,
 			);
@@ -776,7 +686,6 @@
 			children = (
 				1B810315077E1F16185BA1583E011A31 /* Core */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -833,7 +742,6 @@
 			children = (
 				96DA6223BF577712819D1061ADE4CC9F /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
@@ -894,7 +802,6 @@
 				736B9865CDB3B3ECA612DBC2F78ADF6A /* NSData+zlib */,
 				819F9BCEA191D7BC74CB0BBDB92380B7 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -906,46 +813,6 @@
 				FD330CB4A3074A9C6379384A2F00D918 /* FirebaseNanoPB.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA77D6068C33E2C06D7D5675BEA915F6 /* STTwitter */ = {
-			isa = PBXGroup;
-			children = (
-				DBE656767C35AC4F4B95AF08C6647E71 /* BAVPlistNode.h */,
-				3957E6160ED0BFD6A391E634674AAF5F /* BAVPlistNode.m */,
-				35E2E828E9657993E9ED724E955680DD /* JSONSyntaxHighlight.h */,
-				34397F236604CC23CBAC276CED1056CA /* JSONSyntaxHighlight.m */,
-				C952E3FF23696A48DE28CED0D9F6030E /* NSDateFormatter+STTwitter.h */,
-				BA606E1230E6CA0F36FD65B72F1C658E /* NSDateFormatter+STTwitter.m */,
-				8053D32B25D15DE5F940818777A8E320 /* NSError+STTwitter.h */,
-				2CE7F2B5CE722F320FF564761CE3DA1C /* NSError+STTwitter.m */,
-				3E6B8FAEBCAEA43C7025997ACDEDCE6C /* NSString+STTwitter.h */,
-				EB8B7300D141483A1E39AA958F8996B1 /* NSString+STTwitter.m */,
-				1F31AE7550D20024DE24E210CC634E51 /* STHTTPRequest.h */,
-				57F1E39388FF1BECB4FE80454278E300 /* STHTTPRequest.m */,
-				7455E250AC2F4896930EE382CFED5546 /* STHTTPRequest+STTwitter.h */,
-				AEE4F7BDB9CD3AAD9E38C8C2E592C1E8 /* STHTTPRequest+STTwitter.m */,
-				233BF106689F51B07D8B4502752581CD /* STTwitter.h */,
-				4B9636C73BF82CE40217379EE4648936 /* STTwitterAPI.h */,
-				3810C09FC8D57F92F30440683B22246B /* STTwitterAPI.m */,
-				A6E98E211F4C7FD3C4B30235713CFE3A /* STTwitterAppOnly.h */,
-				97089CEA483ED5315756F74A81474D4B /* STTwitterAppOnly.m */,
-				9D2D89A1887AD0D7BC02BF2CA7E90E87 /* STTwitterHTML.h */,
-				679D13B725664BD1D694CF6041F9B583 /* STTwitterHTML.m */,
-				7A4CCA230D690D4F3828C76FD0CE0132 /* STTwitterOAuth.h */,
-				3D7A572746EB07B352ADADC130E2F94C /* STTwitterOAuth.m */,
-				15C30DC60B0849D308123B9C047AA874 /* STTwitterOS.h */,
-				A3A44B6515B307FBB7A350240DA98959 /* STTwitterOS.m */,
-				57FED8101FCC32A07A744BCBC2A00E9B /* STTwitterOSRequest.h */,
-				F1994043CF569795862A4522D01DC851 /* STTwitterOSRequest.m */,
-				C63E4434B664FA09C0351AD69994F8DC /* STTwitterProtocol.h */,
-				2B65AA115913A3F5C18B51C9A00A2507 /* STTwitterRequestProtocol.h */,
-				709439BCBA9F9796D9C60060BF4383FC /* STTwitterStreamParser.h */,
-				135B430E944A0C797BCE896558AA01F2 /* STTwitterStreamParser.m */,
-				229878B1509CE4607034A4ED1063D299 /* Support Files */,
-			);
-			name = STTwitter;
-			path = STTwitter;
 			sourceTree = "<group>";
 		};
 		DF1DB102EA567D65CF30EEE7915913AD /* Frameworks */ = {
@@ -975,7 +842,6 @@
 			children = (
 				D6A18A93E673C160E43C4921A908A7EC /* Frameworks */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -993,7 +859,6 @@
 				FC1A29E87CEA9D6F0C64FEBEBF32BF27 /* encode */,
 				C096E832FE49B98BE2BB7A3C0768D34D /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -1100,24 +965,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9111356C0E0CD742087AB00217BA8FCB /* BAVPlistNode.h in Headers */,
-				8771B49B1B66DC9C8F698B814EBB2216 /* JSONSyntaxHighlight.h in Headers */,
-				1B2C90E76FFAB8E07E053D37F010B9F1 /* NSDateFormatter+STTwitter.h in Headers */,
-				6AC0AC455AE22A4B52E53993A42D6853 /* NSError+STTwitter.h in Headers */,
-				A5F125FDE593B62DB720A7DA9ECB3FD6 /* NSString+STTwitter.h in Headers */,
-				657640E5265D144B3856193F2084655A /* STHTTPRequest+STTwitter.h in Headers */,
-				1E9B0030383830BB88C651B470C17336 /* STHTTPRequest.h in Headers */,
-				C03A29E3109D96D96203E98CC011B93D /* STTwitter-umbrella.h in Headers */,
-				9EBBC83F23F6078033A4194476AE5410 /* STTwitter.h in Headers */,
-				0C2584DCA0F75C893692616F8993686C /* STTwitterAPI.h in Headers */,
-				21FAB77CF4B020A5A8B3ED815DD81636 /* STTwitterAppOnly.h in Headers */,
-				BEBA74D09F720652D0850CDC8E62B0C2 /* STTwitterHTML.h in Headers */,
-				46A3818E49D1433821E8DAAA6036BF8D /* STTwitterOAuth.h in Headers */,
-				B355FEB6AB9995944DB366EDD6CB556E /* STTwitterOS.h in Headers */,
-				293CAAF740D6DB72FB7F11A920DAA51C /* STTwitterOSRequest.h in Headers */,
-				9CDA892BEF2D34AF2F8F88BF55401508 /* STTwitterProtocol.h in Headers */,
-				F8F7C1C544C8526A0A064A8B2077CBC8 /* STTwitterRequestProtocol.h in Headers */,
-				81EBE70A7AB5DF052FF3CDCDAC01F56F /* STTwitterStreamParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1396,21 +1243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C047EE2B7B255C6D8A50B724EB879E50 /* BAVPlistNode.m in Sources */,
-				A7BD52C47B35DE74522A0D145A40CA79 /* JSONSyntaxHighlight.m in Sources */,
-				61794E6BA0AEFCFD394BDB513885CD84 /* NSDateFormatter+STTwitter.m in Sources */,
-				9ABDF95B359DDBF6279CAE57B52E78D8 /* NSError+STTwitter.m in Sources */,
-				0AADB0C40786726F24ED3B76155A7613 /* NSString+STTwitter.m in Sources */,
-				5F9AFFEAEE832929FB40F9BD87C092B6 /* STHTTPRequest+STTwitter.m in Sources */,
-				B9017AB1ABCCB08D8D4F48F9EF889747 /* STHTTPRequest.m in Sources */,
-				42B4D96B70FE255A932ADB5A9BA78350 /* STTwitter-dummy.m in Sources */,
-				420000074F154215B46E6F309C83DA04 /* STTwitterAPI.m in Sources */,
-				F6C737D773C90D2FD54EA40376115A0C /* STTwitterAppOnly.m in Sources */,
-				50C25613490F8FA06C1220DFDB5580F6 /* STTwitterHTML.m in Sources */,
-				7A3FF36970B5A925E868416C72781CF1 /* STTwitterOAuth.m in Sources */,
-				8CAD24519073FF3D6C76197CE172429B /* STTwitterOS.m in Sources */,
-				4E5612C5E2C9BB2A584E2DD8D5A58B70 /* STTwitterOSRequest.m in Sources */,
-				B4922BBC11C0F148A41061E63A4DA607 /* STTwitterStreamParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,7 +1278,6 @@
 /* Begin XCBuildConfiguration section */
 		08B43F4DF7D6DB00D84974CF849B96A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F43DE391A72EC2F07358E521BB7EB7D1 /* STTwitter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1887,7 +1718,6 @@
 		};
 		A161FCCA49E0D13644057FFD0EBB7526 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F43DE391A72EC2F07358E521BB7EB7D1 /* STTwitter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

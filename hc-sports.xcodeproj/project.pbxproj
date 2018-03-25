@@ -20,10 +20,10 @@
 		787B13BC20602CC200F96A4B /* allSportsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13BB20602CC200F96A4B /* allSportsCollectionViewController.swift */; };
 		787B13BE2061A53400F96A4B /* FavsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */; };
 		787B13C02061AB9600F96A4B /* FavsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */; };
+		78E6059C20675E8B00C3576B /* teamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6059B20675E8B00C3576B /* teamTableViewCell.swift */; };
 		78EA61C120659B19005756A8 /* HighlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C020659B19005756A8 /* HighlightsVC.swift */; };
 		78EA61C320659B92005756A8 /* HighlightsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */; };
 		78EA61C72065F794005756A8 /* NSMutableArray+twitterFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */; };
-		78EA61C920674865005756A8 /* STTwitter in Resources */ = {isa = PBXBuildFile; fileRef = 78EA61C820674865005756A8 /* STTwitter */; };
 		7936212A3B48BC781956972B /* Pods_hc_sportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */; };
 		92A556FCF85DC9BA2E9FC7E8 /* Pods_hc_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE826D12120C40043278F6FA /* Pods_hc_sports.framework */; };
 		BB16BF671FE8267100044DAF /* teamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16BF651FE8266800044DAF /* teamVC.swift */; };
@@ -76,12 +76,12 @@
 		787B13BB20602CC200F96A4B /* allSportsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allSportsCollectionViewController.swift; sourceTree = "<group>"; };
 		787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsCollectionViewController.swift; sourceTree = "<group>"; };
 		787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsCollectionViewCell.swift; sourceTree = "<group>"; };
+		78E6059B20675E8B00C3576B /* teamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamTableViewCell.swift; sourceTree = "<group>"; };
 		78EA61C020659B19005756A8 /* HighlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsVC.swift; sourceTree = "<group>"; };
 		78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsCollectionViewCell.swift; sourceTree = "<group>"; };
 		78EA61C42065F793005756A8 /* hc-sports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hc-sports-Bridging-Header.h"; sourceTree = "<group>"; };
 		78EA61C52065F794005756A8 /* NSMutableArray+twitterFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+twitterFile.h"; sourceTree = "<group>"; };
 		78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+twitterFile.m"; sourceTree = "<group>"; };
-		78EA61C820674865005756A8 /* STTwitter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = STTwitter; sourceTree = "<group>"; };
 		79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955BF4B5216AC084DAC1FF6E /* Pods-hc-sportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sportsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sportsUITests/Pods-hc-sportsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB16BF651FE8266800044DAF /* teamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = teamVC.swift; sourceTree = "<group>"; };
@@ -183,7 +183,6 @@
 		BBEA2FAB1FBE443E00583536 /* hc-sports */ = {
 			isa = PBXGroup;
 			children = (
-				78EA61C820674865005756A8 /* STTwitter */,
 				BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
 				BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */,
@@ -196,6 +195,7 @@
 				BB16BF651FE8266800044DAF /* teamVC.swift */,
 				78398FA22062E25D00BFBD1E /* favTeamVC.swift */,
 				BB3126201FF4497E00A999BD /* RosterViewController.swift */,
+				78E6059B20675E8B00C3576B /* teamTableViewCell.swift */,
 				BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */,
 				78398FA42062E80800BFBD1E /* FavRosterTableVC.swift */,
 				78EA61C52065F794005756A8 /* NSMutableArray+twitterFile.h */,
@@ -355,7 +355,6 @@
 				BBEA2FB61FBE443E00583536 /* Assets.xcassets in Resources */,
 				BBC2908A1FD489C0004109FC /* GoogleService-Info.plist in Resources */,
 				BBEA2FB41FBE443E00583536 /* Main.storyboard in Resources */,
-				78EA61C920674865005756A8 /* STTwitter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +556,7 @@
 				BB3126211FF4497E00A999BD /* RosterViewController.swift in Sources */,
 				BBCDB5AE1FD7CDED0079E821 /* allSportsCollectionViewCell.swift in Sources */,
 				787B13AC205C2BD200F96A4B /* Men's Basketball.swift in Sources */,
+				78E6059C20675E8B00C3576B /* teamTableViewCell.swift in Sources */,
 				78EA61C72065F794005756A8 /* NSMutableArray+twitterFile.m in Sources */,
 				78398FA52062E80800BFBD1E /* FavRosterTableVC.swift in Sources */,
 				BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */,
