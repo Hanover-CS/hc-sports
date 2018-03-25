@@ -28,3 +28,11 @@ var wSoccerPos = ["GK", "GK", "GK", "Mid", "Forward", "Mid", "Forward", "Defense
 var wSoccerOverallRecord = "12-5-1"
 
 var wSoccerConferenceRecord = "6-2-1"
+
+var wSoccerSchedule = ["Kalamazoo", "Aurora", "Spalding", "Wittenberg", "Augustana", "Thomas More", "Swewanee", "Capital", "Manchesteer", "Franklin", "Anderson", "Transylvania", "Bluffton", "Earlham", "Defiance", "Mt. St. Joseph", "Rose-Hulman", "Mt. St. Joseph"]
+
+var wSoccerResults = ["L, 2-0", "W, 1-0", "W, 4-0", "W, 1-0", "W, 3-1", "L, 3-1", "W, 3-1", "W, 1-0", "W, 5-1", "L, 1-0", "W, 1-0", "W, 1-0", "W, 2-0", "W, 1-0", "W, 6-1", "L, 2-0", "T, 0-0", "L, 2-0"]
+
+var wSoccerDay = ["FRI", "SUN", "WED", "SAT", "WED", "SUN", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED"]
+
+var wSoccerDate = ["01", "03", "06", "09", "10", "13", "17" , "23", "30", "04", "07", "11", "14", "18", "21", "25", "28", "01"]
