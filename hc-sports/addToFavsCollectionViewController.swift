@@ -38,18 +38,18 @@ class addToFavsCollectionViewController: UICollectionViewController {
      // MARK: - Navigation
 
 //     In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "addSegue") {
-            
-//            let dVC = (segue.destination as! FavsCollectionViewController)
-            let navVC = segue.destination as! UINavigationController
-            let tableVC = navVC.viewControllers.first as! FavsCollectionViewController
-            
-            tableVC.favTeamsDest = favTeams
-//            tablefavTeamsDest = favTeams
-            collectionView?.reloadData()
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "addSegue") {
+//
+////            let dVC = (segue.destination as! FavsCollectionViewController)
+//            let navVC = segue.destination as! UINavigationController
+//            let tableVC = navVC.viewControllers.first as! FavsCollectionViewController
+//
+//            tableVC.favTeamsDest = favTeams
+////            tablefavTeamsDest = favTeams
+//            collectionView?.reloadData()
+//        }
+//    }
 
     // MARK: UICollectionViewDataSource
 

@@ -28,6 +28,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - STTwitter (0.2.6)
   - TwitterCore (3.1.0)
   - TwitterKit (3.3.0):
     - TwitterCore (>= 3.1.0)
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - Firebase
   - Firebase/Database
+  - STTwitter
   - TwitterKit
 
 SPEC CHECKSUMS:
@@ -46,9 +48,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  STTwitter: 30ee2f79eff78c3d633a1edc869e97db9c9ead59
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: ced856b02c5ec0dacd39536ce20779c3b803101d
+PODFILE CHECKSUM: 6f7c999cf65f2bc47065d0bde9dd438a80dbd6c7
 
 COCOAPODS: 1.4.0

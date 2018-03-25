@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import TwitterKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,10 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
-        ref = Database.database().reference()
+//        FirebaseApp.configure()
+//        ref = Database.database().reference()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        
+//        let layout = UICollectionViewFlowLayout()
+//        layout.minimumLineSpacing = 0
+//        let controller = HighlightsVC(UICollectionViewLayout())
+//        window?.rootViewController = UINavigationController(rootViewController: controller)
+        
         
         TWTRTwitter.sharedInstance().start(withConsumerKey:"Et5EGLfDftgJsQWzZMobIkFDb", consumerSecret:"7XZYrcZpKJYuubsOdlqHc9lBxlSUTYEEYbYuPbRcwBeStGBdlJ")
+        
+        
         
         return true
     }
