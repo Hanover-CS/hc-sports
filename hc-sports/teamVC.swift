@@ -8,7 +8,7 @@
 import UIKit
 
 class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if teams[curr] == "Men's Basketball"
         {
@@ -16,28 +16,53 @@ class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         else if teams[curr] == "Women's Basketball"
         {
-            return wBasketball.count
+            return wBasketballSchedule.count
         }
         else if teams[curr] == "Men's Soccer"
         {
-            return mSoccer.count
+            return mSoccerSchedule.count
         }
         else if teams[curr] == "Women's Soccer"
         {
-            return wSoccer.count
+            return wSoccerSchedule.count
         }
-        
+
         return mBasketballSchedule.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as! teamTableViewCell
+
+        if teams[curr] == "Women's Soccer"
+        {
+            cell.day.text = wSoccerDay[indexPath.row]
+            cell.date.text = wSoccerDate[indexPath.row]
+            cell.opponent.text = wSoccerSchedule[indexPath.row]
+            cell.result.text = wSoccerResults[indexPath.row]
+        }
+        else if teams[curr] == "Men's Basketball"
+        {
+            cell.day.text = mBasketballDay[indexPath.row]
+            cell.date.text = mBasketballDate[indexPath.row]
+            cell.opponent.text = mBasketballSchedule[indexPath.row]
+            cell.result.text = mBasketballResults[indexPath.row]
+        }
+        else if teams[curr] == "Women's Basketball"
+        {
+            cell.day.text = wBasketballDay[indexPath.row]
+            cell.date.text = wBasketballDate[indexPath.row]
+            cell.opponent.text = wBasketballSchedule[indexPath.row]
+            cell.result.text = wBasketballResults[indexPath.row]
+        }
+        else if teams[curr] == "Men's Soccer"
+        {
+            cell.day.text = mSoccerDay[indexPath.row]
+            cell.date.text = mSoccerDate[indexPath.row]
+            cell.opponent.text = mSoccerSchedule[indexPath.row]
+            cell.result.text = mSoccerResults[indexPath.row]
+        }
         
-        cell.day.text = mBasketballDay[indexPath.row]
-        cell.date.text = mBasketballDate[indexPath.row]
-        cell.opponent.text = mBasketballSchedule[indexPath.row]
-        cell.result.text = mBasketballResults[indexPath.row]
-        
+
         return cell
     }
     

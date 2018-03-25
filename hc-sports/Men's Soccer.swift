@@ -29,10 +29,10 @@ var mSoccerOverallRecord = "13-4-2"
 
 var mSoccerConferenceRecord = "7-1-1"
 
-var mSoccerSchedule = ["DePauw", "Thomas More", "Otterbein", "Wabash", "UC Clermont", "Wittenberg", "Spalding", "Wilmington", "Manchester", "Franklin", "Anderson", "Transylvania", "Bluffton" ,"Earlham", "Defiance", "Mt. St. Joseph", "Rose-Hulman", "Rose-Hulman"]
+var mSoccerSchedule = ["DePauw", "Thomas More", "Otterbein", "Wabash", "UC Clermont", "Wittenberg", "Spalding", "Wilmington", "Manchester", "Franklin", "Anderson", "Transylvania", "Bluffton" ,"Earlham", "Defiance", "Mt. St. Joseph", "Rose-Hulman", "Rose-Hulman"] //18
 
-var mSoccerResults = ["L, 2-0", "W, 3-1", "L, 2-1", "W, 2-1", "W, 7-0", "W, 1-0", "W, 4-0", "L, 2-1", "W, 1-0", "W, 5-0", "W, 5-1", "L, 2-0", "W, 4-1", "W, 1-0", "W, 3-2", "W, 3-0", "T, 0-0", "T, 1-1"]
+var mSoccerResults = ["L, 2-0", "W, 3-1", "L, 2-1", "W, 2-1", "W, 7-0", "W, 1-0", "W, 4-0", "L, 2-1", "W, 1-0", "W, 5-0", "W, 5-1", "L, 2-0", "W, 4-1", "W, 1-0", "W, 3-2", "W, 3-0", "T, 0-0", "T, 1-1"] //18
 
-var mSoccerDay = ["FRI", "SUN", "SAT", "SUN", "FRI", "SAT", "SUN", "TUE", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED"]
+var mSoccerDay = ["FRI", "SUN", "SAT", "SUN", "FRI", "SAT", "SUN", "TUE", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED"] //18
 
-var mSoccerDate = ["01", "03", "09", "10", "15", "16" , "24", "26", "30", "04", "07", "11", "14", "18", "21", "25", "28", "01"]
+var mSoccerDate = ["01", "03", "09", "10", "15", "16" , "24", "26", "30", "04", "07", "11", "14", "18", "21", "25", "28", "01"] //18

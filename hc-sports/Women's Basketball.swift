@@ -29,10 +29,10 @@ var wBasketballOverallRecord = "18-9"
 
 var wBasketballConferenceRecord = "13-5"
 
-var wBasketballSchedule = ["Spalding", "Baldwin Wallace", "Alma", "Centre", "Trine", "Franklin", "Transylvania", "Bluffton", "Defiance", "Ohio Northern", "Susquehanna", "Rose-Hulman", "Manchester", "Earlham", "Anderson", "Mt. St. Joseph", "Franklin", "Transylvania", "Bluffton", "Rose-Hulman", "Anderson", "Earlham", "Manchester", "Mt. St. Joseph", "Defiance", "Earlham", "Rose-Hulman"]
+var wBasketballSchedule = ["Spalding", "Baldwin Wallace", "Alma", "Centre", "Trine", "Franklin", "Transylvania", "Bluffton", "Defiance", "Ohio Northern", "Susquehanna", "Rose-Hulman", "Manchester", "Earlham", "Anderson", "Mt. St. Joseph", "Franklin", "Transylvania", "Bluffton", "Rose-Hulman", "Anderson", "Earlham", "Manchester", "Mt. St. Joseph", "Defiance", "Earlham", "Rose-Hulman"] //27
 
-var wBasketballResults = ["W, 83-39", "L, 87-77", "W, 86-62", "W, 62-52", "L, 57-47", "W, 66-59", "W, 75-69", "L, 83-65", "W, 92-62", "L, 67-60", "W, 79-58", "L, 66-57", "W, 81-62", "W, 86-75", "W, 79-44", "W, 99-90", "W, 70-56", "L, 69-59", "L, 64-62", "L65-55", "W, 88-67", "W, 81-66", "W, 62-34", "W, 76-52", "W, 81-66", "W, 69-58", "L, 76-73"]
+var wBasketballResults = ["W, 83-39", "L, 87-77", "W, 86-62", "W, 62-52", "L, 57-47", "W, 66-59", "W, 75-69", "L, 83-65", "W, 92-62", "L, 67-60", "W, 79-58", "L, 66-57", "W, 81-62", "W, 86-75", "W, 79-44", "W, 99-90", "W, 70-56", "L, 69-59", "L, 64-62", "L65-55", "W, 88-67", "W, 81-66", "W, 62-34", "W, 76-52", "W, 81-66", "W, 69-58", "L, 76-73"] //27
 
-var wBasketballDay = ["WED", "SAT", "SUN", "SAT", "SUN", "SAT", "WED", "SAT", "SAT", "FRI", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "TUES", "FRI"]
+var wBasketballDay = ["WED", "SAT", "SUN", "SAT", "SUN", "SAT", "WED", "SAT", "SAT", "FRI", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "WED", "SAT", "TUES", "FRI"] //27
 
-var wBasketballDate = ["15", "18", "19", "25", "26", "02", "06", "09", "16", "29", "30", "03", "06", "10", "13", "17", "20", "24", "27", "31", "03", "07", "10", "14", "17", "20", "23"]
+var wBasketballDate = ["15", "18", "19", "25", "26", "02", "06", "09", "16", "29", "30", "03", "06", "10", "13", "17", "20", "24", "27", "31", "03", "07", "10", "14", "17", "20", "23"] //27
