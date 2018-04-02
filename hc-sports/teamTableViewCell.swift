@@ -8,7 +8,8 @@
 
 import UIKit
 
-class teamTableViewCell: UITableViewCell {    
+class teamTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var day: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var opponent: UILabel!
@@ -16,13 +17,9 @@ class teamTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }

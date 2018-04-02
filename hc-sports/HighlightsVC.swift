@@ -8,10 +8,12 @@
 
 import UIKit
 import TwitterKit
-//import STTwitter
 
 class HighlightsVC: UICollectionViewController {
-    var tweets = [AnyObject]()
+    var tweets = [String]()
+    
+    
+    let client = TWTRAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,18 +22,12 @@ class HighlightsVC: UICollectionViewController {
         collectionView?.backgroundColor = UIColor.white
         collectionView?.alwaysBounceVertical = true
         
-//        let twitter = TWTRTwitter.sharedInstance().start(withConsumerKey:"Et5EGLfDftgJsQWzZMobIkFDb", consumerSecret:"7XZYrcZpKJYuubsOdlqHc9lBxlSUTYEEYbYuPbRcwBeStGBdlJ")
-//        let twitter = TWTRTwitter.sharedInstance().authConfig(clientId: "Hanover Panthers")
-//        twitter.verifyCredentialsWithUserSuccessBlock({ (username, userId) -> Void
-//            in
-//            print(username, userId)
-//        } ) {(error) -> Void in
-//            print(error)
-//        }
-//        let client = TWTRAPIClient()
-//        self.dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "HanoverPanthers", APIClient: client)
-//        let dataSource = TWTRUserTimelineDataSource(screenName: "HanoverPanthers", apiClient: TWTRAPIClient())
-//        dataSource.includeReplies = true
+        var dataSource = TWTRUserTimelineDataSource(screenName: "HanoverPanthers", apiClient: client)
+       
+//        dataSource = TWTRUserTimelineDataSource(screenName: "hcsportsapp", apiClient: client)
+//        dataSource.includeReplies
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,27 +48,25 @@ class HighlightsVC: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return 5
-        
+
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tweetCell", for: indexPath) as! HighlightsCollectionViewCell
-        cell.tweet.text = "Twitter Status Update \(indexPath.item)"
-        
+        cell.tweet.text = tweets[indexPath.row]
+
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        return CGSize.init(width: 100, height: 80)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize.init(width: 100, height: 80)
+    }
 
 
 }

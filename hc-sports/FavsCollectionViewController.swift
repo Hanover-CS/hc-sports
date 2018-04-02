@@ -9,15 +9,13 @@
 import UIKit
 
 class FavsCollectionViewController: UICollectionViewController {
-//    var teamSelected: Int = Int()
+
     var favTeamsDest: [String] = []
+    
     @IBOutlet weak var addMessage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
         navigationItem.title = "Favorites"
     }
@@ -29,20 +27,7 @@ class FavsCollectionViewController: UICollectionViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -59,12 +44,15 @@ class FavsCollectionViewController: UICollectionViewController {
         if (favTeams.count > 0) {
             addMessage.isHidden = true
         }
+        
         print("favTeam len:", favTeams)
+        
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         curr = indexPath.row
+        
         performSegue(withIdentifier: "teamSegue", sender: self)
     }
    

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7810F7882061ADA10095E624 /* addToFavsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810F7872061ADA10095E624 /* addToFavsCollectionViewController.swift */; };
 		7810F78A2061ADD10095E624 /* addToFavsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810F7892061ADD10095E624 /* addToFavsCollectionViewCell.swift */; };
-		7835638B206775B00015CA5D /* STTwitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7835638C206775B00015CA5D /* STTwitter.framework */; };
 		78398FA120622BCD00BFBD1E /* variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78398FA020622BCD00BFBD1E /* variables.swift */; };
 		78398FA32062E25D00BFBD1E /* favTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78398FA22062E25D00BFBD1E /* favTeamVC.swift */; };
 		78398FA52062E80800BFBD1E /* FavRosterTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78398FA42062E80800BFBD1E /* FavRosterTableVC.swift */; };
@@ -22,12 +21,15 @@
 		787B13BE2061A53400F96A4B /* FavsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */; };
 		787B13C02061AB9600F96A4B /* FavsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */; };
 		78DD3517206781170040C79A /* favTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD3516206781170040C79A /* favTeamTableViewCell.swift */; };
+		78DD35182068D4950040C79A /* Pods_hc_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE826D12120C40043278F6FA /* Pods_hc_sports.framework */; };
+		78DD35242071D55B0040C79A /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35232071D55B0040C79A /* TwitterKit.framework */; };
+		78DD35252071D55B0040C79A /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35232071D55B0040C79A /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78DD35282071D5810040C79A /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35272071D5810040C79A /* TwitterCore.framework */; };
 		78E6059C20675E8B00C3576B /* teamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6059B20675E8B00C3576B /* teamTableViewCell.swift */; };
 		78EA61C120659B19005756A8 /* HighlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C020659B19005756A8 /* HighlightsVC.swift */; };
 		78EA61C320659B92005756A8 /* HighlightsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */; };
 		78EA61C72065F794005756A8 /* NSMutableArray+twitterFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */; };
 		7936212A3B48BC781956972B /* Pods_hc_sportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */; };
-		B67F37F21FDA9B1F1624F705 /* Pods_hc_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE826D12120C40043278F6FA /* Pods_hc_sports.framework */; };
 		BB16BF671FE8267100044DAF /* teamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16BF651FE8266800044DAF /* teamVC.swift */; };
 		BB3126211FF4497E00A999BD /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3126201FF4497E00A999BD /* RosterViewController.swift */; };
 		BB3126231FF44FE100A999BD /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */; };
@@ -60,6 +62,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		78DD35262071D55B0040C79A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78DD35252071D55B0040C79A /* TwitterKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		29CFA205DC4265ABC969B23D /* Pods-hc-sports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hc-sports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hc-sports/Pods-hc-sports.debug.xcconfig"; sourceTree = "<group>"; };
 		3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hc_sportsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +96,8 @@
 		787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsCollectionViewController.swift; sourceTree = "<group>"; };
 		787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsCollectionViewCell.swift; sourceTree = "<group>"; };
 		78DD3516206781170040C79A /* favTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favTeamTableViewCell.swift; sourceTree = "<group>"; };
+		78DD35232071D55B0040C79A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		78DD35272071D5810040C79A /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = "../../Downloads/Twitter-Kit-iOS/TwitterCore.framework"; sourceTree = "<group>"; };
 		78E6059B20675E8B00C3576B /* teamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamTableViewCell.swift; sourceTree = "<group>"; };
 		78EA61C020659B19005756A8 /* HighlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsVC.swift; sourceTree = "<group>"; };
 		78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -116,8 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7835638B206775B00015CA5D /* STTwitter.framework in Frameworks */,
-				B67F37F21FDA9B1F1624F705 /* Pods_hc_sports.framework in Frameworks */,
+				78DD35282071D5810040C79A /* TwitterCore.framework in Frameworks */,
+				78DD35182068D4950040C79A /* Pods_hc_sports.framework in Frameworks */,
+				78DD35242071D55B0040C79A /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +162,7 @@
 		40395929F12EABCE3F845EA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78DD35272071D5810040C79A /* TwitterCore.framework */,
 				7835638C206775B00015CA5D /* STTwitter.framework */,
 				BE826D12120C40043278F6FA /* Pods_hc_sports.framework */,
 				3818C6B37FAC1EE5902529F6 /* Pods_hc_sportsTests.framework */,
@@ -167,6 +187,7 @@
 		BBEA2FA01FBE443E00583536 = {
 			isa = PBXGroup;
 			children = (
+				78DD35232071D55B0040C79A /* TwitterKit.framework */,
 				BBEA2FAB1FBE443E00583536 /* hc-sports */,
 				BBEA2FC21FBE443E00583536 /* hc-sportsTests */,
 				BBEA2FCD1FBE443F00583536 /* hc-sportsUITests */,
@@ -255,6 +276,7 @@
 				BBEA2FA71FBE443E00583536 /* Resources */,
 				86F82020DE232D9BB1D19176 /* [CP] Embed Pods Frameworks */,
 				74347947198E1F7EC0A4818A /* [CP] Copy Pods Resources */,
+				78DD35262071D55B0040C79A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

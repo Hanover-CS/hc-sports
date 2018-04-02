@@ -8,7 +8,7 @@
 import UIKit
 
 class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if teams[curr] == "Men's Basketball"
         {
