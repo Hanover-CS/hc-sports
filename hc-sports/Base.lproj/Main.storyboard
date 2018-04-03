@@ -351,6 +351,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Qif-rR-JGv"/>
+                    <connections>
+                        <outlet property="tweetView" destination="gch-Wy-h36" id="0I2-gM-cgS"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIi-0Z-m7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -952,7 +955,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzS-2G-kwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="1945"/>
+            <point key="canvasLocation" x="1103" y="1943"/>
         </scene>
     </scenes>
     <resources>

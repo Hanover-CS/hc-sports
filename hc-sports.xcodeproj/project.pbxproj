@@ -25,6 +25,8 @@
 		78DD35242071D55B0040C79A /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35232071D55B0040C79A /* TwitterKit.framework */; };
 		78DD35252071D55B0040C79A /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35232071D55B0040C79A /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78DD35282071D5810040C79A /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD35272071D5810040C79A /* TwitterCore.framework */; };
+		78DD352A20731F6E0040C79A /* HighlightsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD352920731F6E0040C79A /* HighlightsTableVC.swift */; };
+		78DD352C207328BD0040C79A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD352B207328BD0040C79A /* TimelineViewController.swift */; };
 		78E6059C20675E8B00C3576B /* teamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6059B20675E8B00C3576B /* teamTableViewCell.swift */; };
 		78EA61C120659B19005756A8 /* HighlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C020659B19005756A8 /* HighlightsVC.swift */; };
 		78EA61C320659B92005756A8 /* HighlightsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */; };
@@ -98,6 +100,8 @@
 		78DD3516206781170040C79A /* favTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favTeamTableViewCell.swift; sourceTree = "<group>"; };
 		78DD35232071D55B0040C79A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		78DD35272071D5810040C79A /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = "../../Downloads/Twitter-Kit-iOS/TwitterCore.framework"; sourceTree = "<group>"; };
+		78DD352920731F6E0040C79A /* HighlightsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsTableVC.swift; sourceTree = "<group>"; };
+		78DD352B207328BD0040C79A /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		78E6059B20675E8B00C3576B /* teamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamTableViewCell.swift; sourceTree = "<group>"; };
 		78EA61C020659B19005756A8 /* HighlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsVC.swift; sourceTree = "<group>"; };
 		78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */,
 				78398FA62062E83500BFBD1E /* FavRosterTableViewCell.swift */,
 				78EA61C020659B19005756A8 /* HighlightsVC.swift */,
+				78DD352920731F6E0040C79A /* HighlightsTableVC.swift */,
+				78DD352B207328BD0040C79A /* TimelineViewController.swift */,
 				78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
@@ -576,6 +582,7 @@
 				787B13B2205C331100F96A4B /* Women's Soccer.swift in Sources */,
 				BB8A68E81FE3386C006ADF6B /* MyTableViewCell.swift in Sources */,
 				787B13AE205C30FF00F96A4B /* Women's Basketball.swift in Sources */,
+				78DD352C207328BD0040C79A /* TimelineViewController.swift in Sources */,
 				78DD3517206781170040C79A /* favTeamTableViewCell.swift in Sources */,
 				BBEA2FAD1FBE443E00583536 /* AppDelegate.swift in Sources */,
 				787B13B0205C320D00F96A4B /* Men's Soccer.swift in Sources */,
@@ -585,6 +592,7 @@
 				BBCDB5AE1FD7CDED0079E821 /* allSportsCollectionViewCell.swift in Sources */,
 				787B13AC205C2BD200F96A4B /* Men's Basketball.swift in Sources */,
 				78E6059C20675E8B00C3576B /* teamTableViewCell.swift in Sources */,
+				78DD352A20731F6E0040C79A /* HighlightsTableVC.swift in Sources */,
 				78EA61C72065F794005756A8 /* NSMutableArray+twitterFile.m in Sources */,
 				78398FA52062E80800BFBD1E /* FavRosterTableVC.swift in Sources */,
 				BBEA2FAF1FBE443E00583536 /* LandingViewController.swift in Sources */,
