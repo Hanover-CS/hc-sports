@@ -11,4 +11,8 @@ import UIKit
 class HighlightsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tweet: UILabel!
     
+    // Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

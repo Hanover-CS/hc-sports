@@ -1,14 +1,15 @@
-/**
- Men's Basketball.swift
- hc-sports
-
- Created by Stephanie Iglesias on 3/16/18.
- Copyright © 2018 Stephanie Iglesias. All rights reserved.
-*/
+//
+// Men's Basketball.swift
+// hc-sports
+//
+// Created by Stephanie Iglesias on 3/16/18.
+// Copyright © 2018 Stephanie Iglesias. All rights reserved.
+//
 
 import Foundation
 
-/**     Men's Basketball file contains characteristics about the men's basketball team stored in the string literals:
+/*:
+        Men's Basketball file contains characteristics about the men's basketball team stored in the string literals:
         - mBasketball: list of men's basketball team players
         - mBasketballYr: list of the players' academic year
         - mBasketballNum: list of the players' number

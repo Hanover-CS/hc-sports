@@ -8,7 +8,8 @@
 
 import Foundation
 
-/**     Men's Soccer file contains characteristics about the men's soccer team stored in the string literals:
+/*:
+        Men's Soccer file contains characteristics about the men's soccer team stored in the string literals:
         - mSoccer: list of men's soccer team players
         - mSoccerYr: list of the players' academic year
         - mSoccerNum: list of the players' number

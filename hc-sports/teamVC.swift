@@ -9,7 +9,15 @@ import UIKit
 
 class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    /*:
+        Tells the data source to return the number of rows in a given section of a table view.
+        - parameter:
+            tableView: The table-view object requesting this information.
+            section: An index number identifying a section in tableView.
+        - returns: The number of rows in section.
+     */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         if teams[curr] == "Men's Basketball"
         {
             return mBasketballSchedule.count
@@ -30,7 +38,15 @@ class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return mBasketballSchedule.count
     }
 
+    /*:
+        Asks the data source for a cell to insert in a particular location of the table view.
+        - parameter:
+            tableView: A table-view object requesting the cell.
+            indexPath: An index path locating a row in tableView.
+        - returns: An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.
+     */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // cell variable stores the reusable table-view cell object for the specified reuse identifier and adds it to the table that's returned from the dequeueResuableCell method.
          let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as! teamTableViewCell
 
         if teams[curr] == "Women's Soccer"
@@ -61,8 +77,6 @@ class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             cell.opponent.text = mSoccerSchedule[indexPath.row]
             cell.result.text = mSoccerResults[indexPath.row]
         }
-        
-
         return cell
     }
     
@@ -72,10 +86,10 @@ class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var conferenceRecord: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    
+    // Implement viewDidLoad to do additional setup after loading the view, typically from a nib file.
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Sets the title page to the team selected by the user.
         titleLabel.title = teams[curr]
 
         if teams[curr] == "Men's Basketball" {
@@ -96,7 +110,7 @@ class teamVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
 
     }
-    
+    // Roster button is an action button used to navigate the user to the team's roster.
     @IBAction func rosterButton(_ sender: UIButton) {
         performSegue(withIdentifier: "rosterSeg", sender: self)
     }

@@ -818,7 +818,6 @@
                                 <size key="customSize" width="90" height="90"/>
                                 <connections>
                                     <outlet property="imageView" destination="Jmz-wT-Rtl" id="jKZ-kz-DjB"/>
-                                    <segue destination="a5H-z1-gS6" kind="show" identifier="teamSegue" id="wcV-JQ-H4a"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -836,6 +835,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addMessage" destination="wX9-gW-wIa" id="eg9-Zt-JWq"/>
+                        <segue destination="a5H-z1-gS6" kind="show" identifier="teamSegue" id="PN7-Dx-Hjf"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eg9-I7-F5K" userLabel="First Responder" sceneMemberID="firstResponder"/>

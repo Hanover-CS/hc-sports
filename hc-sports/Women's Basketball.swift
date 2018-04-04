@@ -8,7 +8,8 @@
 
 import Foundation
 
-/**     Women's Basketball file contains characteristics about the women's basketball team stored in the string literals:
+/*:
+        Women's Basketball file contains characteristics about the women's basketball team stored in the string literals:
         - wBasketball: list of women's basketball team players
         - wBasketballYr: list of the players' academic year
         - wBasketballNum: list of the players' number

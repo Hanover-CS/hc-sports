@@ -8,7 +8,8 @@
 
 import Foundation
 
-/**     Women's Soccer file contains characteristics about the women's soccer team stored in the string literals:
+/*:
+        Women's Soccer file contains characteristics about the women's soccer team stored in the string literals:
         - wSoccer: list of women's soccer team players
         - wSoccerYr: list of the players' academic year
         - wSoccerNum: list of the players' number

@@ -9,14 +9,21 @@
 import UIKit
 
 class RosterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    // Implement viewDidLoad to do additional setup after loading the view, typically from a nib file.
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
+    /*:
+        Tells the data source to return the number of rows in a given section of a table view.
+        - parameter:
+            tableView: The table-view object requesting this information.
+            section: An index number identifying a section in tableView.
+        - returns: The number of rows in section.
+     */
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {        
+    {
+        
         if teams[curr] == "Men's Basketball"
         {
             return mBasketball.count
@@ -33,12 +40,19 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
         {
             return wSoccer.count
         }
-        
         return mBasketball.count
-        
     }
+    
+    /*:
+        Asks the data source for a cell to insert in a particular location of the table view.
+        - parameter:
+            tableView: A table-view object requesting the cell.
+            indexPath: An index path locating a row in tableView.
+        - returns: The number of rows in section.
+     */
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        // cell variable stores the reusable table-view cell object for the specified reuse identifier and adds it to the table that's returned from the dequeueResuableCell method.
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RosterTableViewCell
         
         if teams[curr] == "Women's Soccer"
@@ -73,13 +87,12 @@ class RosterViewController: UIViewController, UITableViewDataSource, UITableView
             cell.playerYear.text = mSoccerYr[indexPath.row]
             cell.playerPosition.text = mSoccerPos[indexPath.row]
         }
-        
         return cell
     }
 
+    // Implement didReceiveMemoryWarning to release any additional memory used by your view controller.
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

@@ -11,9 +11,8 @@ import UIKit
 class FavsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
-    
+   // Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }

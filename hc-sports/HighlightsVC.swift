@@ -10,8 +10,7 @@ import UIKit
 import TwitterKit
 
 class HighlightsVC: UICollectionViewController {
-    var tweets = [String]()
-
+    
     @IBOutlet var tweetView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class HighlightsVC: UICollectionViewController {
 //        let client = TWTRAPIClient()
 //        var dataSource = TWTRCollectionTimelineDataSource(collectionID: "177998087", apiClient: client)
 //        self.init(dataSource: 5)
-//        
+//
 //         Show Tweet actions
 //        self.showTweetActions = true
 //    }
