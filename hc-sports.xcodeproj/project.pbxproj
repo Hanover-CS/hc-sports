@@ -35,7 +35,6 @@
 		BB16BF671FE8267100044DAF /* teamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16BF651FE8266800044DAF /* teamVC.swift */; };
 		BB3126211FF4497E00A999BD /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3126201FF4497E00A999BD /* RosterViewController.swift */; };
 		BB3126231FF44FE100A999BD /* RosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */; };
-		BB8A68E81FE3386C006ADF6B /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */; };
 		BBC2908A1FD489C0004109FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC290891FD489BF004109FC /* GoogleService-Info.plist */; };
 		BBCDB5AE1FD7CDED0079E821 /* allSportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB5AD1FD7CDED0079E821 /* allSportsCollectionViewCell.swift */; };
 		BBD177F81705E58D785D9C2F /* Pods_hc_sportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79935AB290B32C9FD26FEC3B /* Pods_hc_sportsUITests.framework */; };
@@ -113,7 +112,6 @@
 		BB16BF651FE8266800044DAF /* teamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = teamVC.swift; sourceTree = "<group>"; };
 		BB3126201FF4497E00A999BD /* RosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
 		BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewCell.swift; sourceTree = "<group>"; };
-		BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		BBC290891FD489BF004109FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BBCDB5AD1FD7CDED0079E821 /* allSportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allSportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BBEA2FA91FBE443E00583536 /* hc-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hc-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +173,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		78CEEFD22075494300DF27E7 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		78CEEFD32075497900DF27E7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */,
+				787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */,
+				78398FA22062E25D00BFBD1E /* favTeamVC.swift */,
+				78DD3516206781170040C79A /* favTeamTableViewCell.swift */,
+				7810F7872061ADA10095E624 /* addToFavsCollectionViewController.swift */,
+				7810F7892061ADD10095E624 /* addToFavsCollectionViewCell.swift */,
+				78398FA42062E80800BFBD1E /* FavRosterTableVC.swift */,
+				78398FA62062E83500BFBD1E /* FavRosterTableViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		78CEEFD4207549CD00DF27E7 /* All Sports */ = {
+			isa = PBXGroup;
+			children = (
+				787B13BB20602CC200F96A4B /* allSportsCollectionViewController.swift */,
+				BBCDB5AD1FD7CDED0079E821 /* allSportsCollectionViewCell.swift */,
+				BB16BF651FE8266800044DAF /* teamVC.swift */,
+				78E6059B20675E8B00C3576B /* teamTableViewCell.swift */,
+				BB3126201FF4497E00A999BD /* RosterViewController.swift */,
+				BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */,
+			);
+			path = "All Sports";
+			sourceTree = "<group>";
+		};
+		78CEEFD520754A1500DF27E7 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				787B13AB205C2BD200F96A4B /* Men's Basketball.swift */,
+				787B13AD205C30FF00F96A4B /* Women's Basketball.swift */,
+				787B13AF205C320D00F96A4B /* Men's Soccer.swift */,
+				787B13B1205C331100F96A4B /* Women's Soccer.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		78CEEFD620754A3700DF27E7 /* Highlights */ = {
+			isa = PBXGroup;
+			children = (
+				78EA61C020659B19005756A8 /* HighlightsVC.swift */,
+				78DD352920731F6E0040C79A /* HighlightsTableVC.swift */,
+				78DD352B207328BD0040C79A /* TimelineViewController.swift */,
+				78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */,
+			);
+			path = Highlights;
+			sourceTree = "<group>";
+		};
+		78CEEFD820754C1C00DF27E7 /* Bridge Files */ = {
+			isa = PBXGroup;
+			children = (
+				78EA61C42065F793005756A8 /* hc-sports-Bridging-Header.h */,
+				78EA61C52065F794005756A8 /* NSMutableArray+twitterFile.h */,
+				78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */,
+			);
+			path = "Bridge Files";
+			sourceTree = "<group>";
+		};
 		9E233C7AD995219828666660 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,37 +282,16 @@
 			children = (
 				BBEA2FAC1FBE443E00583536 /* AppDelegate.swift */,
 				BBEA2FB21FBE443E00583536 /* Main.storyboard */,
-				BBEA2FAE1FBE443E00583536 /* LandingViewController.swift */,
-				78DD3516206781170040C79A /* favTeamTableViewCell.swift */,
-				787B13BD2061A53400F96A4B /* FavsCollectionViewController.swift */,
-				787B13BF2061AB9600F96A4B /* FavsCollectionViewCell.swift */,
-				7810F7872061ADA10095E624 /* addToFavsCollectionViewController.swift */,
-				7810F7892061ADD10095E624 /* addToFavsCollectionViewCell.swift */,
-				787B13BB20602CC200F96A4B /* allSportsCollectionViewController.swift */,
-				BBCDB5AD1FD7CDED0079E821 /* allSportsCollectionViewCell.swift */,
-				BB16BF651FE8266800044DAF /* teamVC.swift */,
-				78E6059B20675E8B00C3576B /* teamTableViewCell.swift */,
-				78398FA22062E25D00BFBD1E /* favTeamVC.swift */,
-				BB3126201FF4497E00A999BD /* RosterViewController.swift */,
-				BB3126221FF44FE100A999BD /* RosterTableViewCell.swift */,
-				78398FA42062E80800BFBD1E /* FavRosterTableVC.swift */,
-				78EA61C52065F794005756A8 /* NSMutableArray+twitterFile.h */,
-				78EA61C62065F794005756A8 /* NSMutableArray+twitterFile.m */,
-				78398FA62062E83500BFBD1E /* FavRosterTableViewCell.swift */,
-				78EA61C020659B19005756A8 /* HighlightsVC.swift */,
-				78DD352920731F6E0040C79A /* HighlightsTableVC.swift */,
-				78DD352B207328BD0040C79A /* TimelineViewController.swift */,
-				78EA61C220659B92005756A8 /* HighlightsCollectionViewCell.swift */,
 				BBEA2FB51FBE443E00583536 /* Assets.xcassets */,
 				BBEA2FBA1FBE443E00583536 /* Info.plist */,
 				BBC290891FD489BF004109FC /* GoogleService-Info.plist */,
-				BB8A68E71FE3386B006ADF6B /* MyTableViewCell.swift */,
 				78398FA020622BCD00BFBD1E /* variables.swift */,
-				787B13AB205C2BD200F96A4B /* Men's Basketball.swift */,
-				787B13AD205C30FF00F96A4B /* Women's Basketball.swift */,
-				787B13AF205C320D00F96A4B /* Men's Soccer.swift */,
-				787B13B1205C331100F96A4B /* Women's Soccer.swift */,
-				78EA61C42065F793005756A8 /* hc-sports-Bridging-Header.h */,
+				78CEEFD22075494300DF27E7 /* Landing */,
+				78CEEFD32075497900DF27E7 /* Favorites */,
+				78CEEFD4207549CD00DF27E7 /* All Sports */,
+				78CEEFD620754A3700DF27E7 /* Highlights */,
+				78CEEFD520754A1500DF27E7 /* Teams */,
+				78CEEFD820754C1C00DF27E7 /* Bridge Files */,
 			);
 			path = "hc-sports";
 			sourceTree = "<group>";
@@ -580,7 +625,6 @@
 				78EA61C120659B19005756A8 /* HighlightsVC.swift in Sources */,
 				78398FA72062E83500BFBD1E /* FavRosterTableViewCell.swift in Sources */,
 				787B13B2205C331100F96A4B /* Women's Soccer.swift in Sources */,
-				BB8A68E81FE3386C006ADF6B /* MyTableViewCell.swift in Sources */,
 				787B13AE205C30FF00F96A4B /* Women's Basketball.swift in Sources */,
 				78DD352C207328BD0040C79A /* TimelineViewController.swift in Sources */,
 				78DD3517206781170040C79A /* favTeamTableViewCell.swift in Sources */,
